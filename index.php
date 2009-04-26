@@ -20,8 +20,8 @@ foreach ($experimental as $commit)
     $commits[$commit['date2']]           = $commit;
     $commits[$commit['date2']]['branch'] = 'experimental';
 }
-ksort($commits, SORT_NUMERIC);
-$commits = array_reverse($commits);
+ksort ($commits, SORT_NUMERIC);
+$commits = array_reverse ($commits);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
