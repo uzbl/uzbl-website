@@ -101,7 +101,7 @@ foreach ($commits as $comm)
         <div id="about">
           <h2>The uzbl browser&hellip;</h2>
           <p>&hellip;a minimal WebKit browser with vim-like commands, modes, no unnecessary interface elements (we really cracked down on those), and all controllable from a FIFO and with external scripts - what more could you want? Uzbl exists to supply a browser that follows the UNIX philosophy - &quot;Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.&quot;</p>
-          <p>Uzbl is under heavy development at the moment and shouldn't really be used unless as your main browser. Unless you're daring of course. The latest 'stable' branch is located in Dieterbe's master branch, and the latest development version in his experimental branch. You can, however, run code from the other developers branches, it just might not work.</p>
+          <p>Uzbl is under heavy development at the moment and shouldn't really be used as your main browser. Unless you're daring of course. The latest 'stable' branch is located in Dieterbe's master branch, and the latest development version in his experimental branch. You can, however, run code from the other developers branches, it just might not work.</p>
           <p>You can find us in IRC at irc.freenode.net, in channel #uzbl.</p>
         </div>
         
