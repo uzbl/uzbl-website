@@ -31,10 +31,11 @@
       
       <div id="main">
         <h2>Users</h2>
-        <p>Right now, the best way to contribute to Uzbl is to use it, hang around in our IRC channel, and tell us when things break. If you're feeling more adventerous, you can use one of the development branches and give bug reports and suggestions straight to the developer in charge of that, so the same problems don't occur when they get merged into the master branch.</p>
+        <p>Right now, the best way to contribute to Uzbl is to use it, hang around in our IRC channel, and tell us when things break. If you're feeling more adventerous, you can use one of the development branches and give bug reports and suggestions straight to the developer in charge of that, so the same problems don't occur when they get merged into the master branch.
+        Have a look at the CHECKLIST file to see all the stuff that is supposed to work.</p>
 
         <h2>Developers</h2>
-        <p>If you don't feel like just sending bug reports, by all means dive into the code and/or create your own fork.</p>
+        <p>If you don't feel like just sending bug reports, by all means dive into the code and clone the code to start hacking.  (github makes this really easy with their "fork" concept).</p>
       </div>
     </div>
 <script type="text/javascript">

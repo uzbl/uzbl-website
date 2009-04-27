@@ -37,8 +37,11 @@
         <p>If you don't use Arch, or if you do and don't want to use the PKGBUILD for some strange reason, you can use the following lines in your terminal (make sure you have git, Gtk2, and libwebkit installed):</p>
         <pre><code>$ git clone git://github.com/Dieterbe/uzbl.git
 $ cd uzbl
-$ make</code></pre>
-  <p>You will then have an executable file 'uzbl' in the current directory. You can configure it by editing the &quot;sampelconfig&quot; file, which needs to be moved to $XDG_CONFIG_HOME (or a directory in $XDG_CONFIG_DIRS) and renamed to &quot;uzbl&quot;. You can also pass the path to the config file with the --config parameter.</p>
+$ make
+$ make install</code></pre>
+<h2>After installing</h2>
+  <p>You will have the program in /usr/bin and various sample scripts, a sample config, sample bookmarks file and some documentation in /usr/share/uzbl.  You will probably want to change the scripts to behave more like you want, so copy the scripts to your home dir.
+  If you save your config as $XDG_CONFIG_HOME/uzbl/config (this expands to ~/.config/uzbl/config on most systems) it will be recognized automatically.  You can also pass the path to the config file with the --config parameter.</p>
 
         <h3>Branches</h3>
         <p>The branches are listed on the home page, but just so you don't have to go back to have a look, here they are again:</p>

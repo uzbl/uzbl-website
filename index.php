@@ -100,7 +100,12 @@ foreach ($commits as $comm)
       <div id="left">
         <div id="about">
           <h2>The uzbl browser&hellip;</h2>
-          <p>&hellip;a minimal WebKit browser with vim-like commands, modes, no unnecessary interface elements (we really cracked down on those), and all controllable from a FIFO and with external scripts - what more could you want? Uzbl exists to supply a browser that follows the UNIX philosophy - &quot;Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.&quot;</p>
+          <p>&hellip;a keyboard controlled (modal vim-like bindings, or with modifier keys) browser based on Webkit.</p>
+          <p>very minimal interface.  No unnecessary interface elements</p>
+          <p>controllable through a FIFO and with external scripts.</p>
+          <p>what is not browsing, is not in uzbl.  Things like url changing, loading/saving of bookmarks, saving history,.. are handled through <b>external</b> scripts that you write</p>
+          <p>Uzbl keeps it simple, and puts <b>you</b> in charge.</p>
+          <p>Uzbl follows the UNIX philosophy - &quot;Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.&quot;</p>
           <p>Uzbl is under heavy development at the moment and shouldn't really be used as your main browser. Unless you're daring of course. The latest 'stable' branch is located in Dieterbe's master branch, and the latest development version in his experimental branch. You can, however, run code from the other developers branches, it just might not work.</p>
           <p>You can find us in IRC at irc.freenode.net, in channel #uzbl.</p>
         </div>
@@ -108,6 +113,12 @@ foreach ($commits as $comm)
         <div id="news">
           <h2>Latest News</h2>
           
+          <div class="newsitem">
+            <h3>First prototype</h3>
+            <span class="date">2009-04-27</span>
+            <p>We have something usable now.  You can run uzbl and try out the browsing and loading new url's from history and/or bookmark file.  Editing url's is a bit cumbersome for now.
+            <br/>Please see <a href="http://github.com/Dieterbe/uzbl/blob/c5523c7882cbd37b3c117ba178b44b751d0b65cd/README">README</a> to get you started.  Building instructions are on this site.</p>
+          </div>          
           <div class="newsitem">
             <h3>The mostly-uzbl website</h3>
             <span class="date">2009-04-26</span>
