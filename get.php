@@ -38,7 +38,7 @@
         <pre><code>$ git clone git://github.com/Dieterbe/uzbl.git
 $ cd uzbl
 $ make</code></pre>
-        <p>You will then have an executable file 'uzbl' in the current directory. You can configure it by editing the file 'sampleconfig' which, for now, needs to be in the same directory as the executable.</p>
+  <p>You will then have an executable file 'uzbl' in the current directory. You can configure it by editing the &quot;sampelconfig&quot; file, which needs to be moved to $XDG_CONFIG_HOME (or a directory in $XDG_CONFIG_DIRS) and renamed to &quot;uzbl&quot;. You can also pass the path to the config file with the --config parameter.</p>
 
         <h3>Branches</h3>
         <p>The branches are listed on the home page, but just so you don't have to go back to have a look, here they are again:</p>
