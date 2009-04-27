@@ -67,7 +67,7 @@ foreach ($commits as $comm)
     if ($num_commits < $commit_limit) {
         $title = $comm['title'];
         if (strlen ($title) > 35)
-            $title = substr ($title, 0, 35) . '...';
+            $title = substr ($title, 0, 32) . '...';
 
         echo "<li>{$title} <span class='branch'>{$comm['branch']}</span></li>\n";
         $num_commits++;
