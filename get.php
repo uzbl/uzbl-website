@@ -37,8 +37,11 @@
         <p>If you don't use Arch, or if you do and don't want to use the PKGBUILD for some strange reason, you can use the following lines in your terminal (make sure you have git, Gtk2, and libwebkit installed):</p>
         <pre><code>$ git clone git://github.com/Dieterbe/uzbl.git
 $ cd uzbl
-$ make</code></pre>
-        <p>You will then have an executable file 'uzbl' in the current directory. You can configure it by editing the file 'sampleconfig' which, for now, needs to be in the same directory as the executable.</p>
+$ make
+$ make install</code></pre>
+<h2>After installing</h2>
+  <p>You will have the program in /usr/bin and various sample scripts, a sample config, sample bookmarks file and some documentation in /usr/share/uzbl.  You will probably want to change the scripts to behave more like you want, so copy the scripts to your home dir.
+  If you save your config as $XDG_CONFIG_HOME/uzbl/config (this expands to ~/.config/uzbl/config on most systems) it will be recognized automatically.  You can also pass the path to the config file with the --config parameter.</p>
 
         <h3>Branches</h3>
         <p>The branches are listed on the home page, but just so you don't have to go back to have a look, here they are again:</p>
@@ -64,5 +67,14 @@ $ make</code></pre>
         <p>As we do all of our development and testing on Arch, you may encounter bugs we can't reproduce easily. In that case, make sure to provide as much information as you can.</p>
       </div>
     </div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4514522-11");
+pageTracker._trackPageview();
+} catch(err) {}</script>
   </body>
 </html>
