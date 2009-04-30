@@ -3,6 +3,7 @@ error_reporting (E_ERROR | E_PARSE);
 
 require_once 'functions.inc';
 
+/* ***** Commit messages ***** */
 $master       = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/master');
 $experimental = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/experimental');
 
@@ -22,6 +23,18 @@ foreach ($experimental as $commit)
 }
 ksort ($commits, SORT_NUMERIC);
 $commits = array_reverse ($commits);
+
+/* ***** News ***** */
+$newsarray = getnews ();
+$news = "";
+
+foreach ($newsarray as $item) {
+    $news .= "<div class=\"newsitem\">
+                <h3>{$item['title']}</h3>
+                <span class=\"date\">{$item['date']}</span>
+                <p>{$item['body']}</p>
+              </div>";
+}
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -107,24 +120,15 @@ foreach ($commits as $comm)
           <p>what is not browsing, is not in uzbl.  Things like url changing, loading/saving of bookmarks, saving history,.. are handled through <b>external</b> scripts that you write</p>
           <p>Uzbl keeps it simple, and puts <b>you</b> in charge.</p>
           <p>Uzbl follows the UNIX philosophy - &quot;Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.&quot;</p>
-          <p>Uzbl is under heavy development at the moment and shouldn't really be used as your main browser. Unless you're daring of course. The latest 'stable' branch is located in Dieterbe's master branch, and the latest development version in his experimental branch. You can, however, run code from the other developers branches, it just might not work.</p>
+          <p>Uzbl is under heavy development at the moment and shouldn't really be used as your main browser. Unless you're daring of course. The latest 'stable' branch is located in Dieterbe\'s master branch, and the latest development version in his experimental branch. You can, however, run code from the other developers branches, it just might not work.</p>
           <p>You can find us in IRC at irc.freenode.net, in channel #uzbl.</p>
         </div>
         
         <div id="news">
           <h2>Latest News</h2>
-          
-          <div class="newsitem">
-            <h3>First prototype</h3>
-            <span class="date">2009-04-27</span>
-            <p>We have something usable now.  You can run uzbl and try out the browsing and loading new url's from history and/or bookmark file.  Editing url's is a bit cumbersome for now.
-            <br/>Please see <a href="http://github.com/Dieterbe/uzbl/blob/c5523c7882cbd37b3c117ba178b44b751d0b65cd/README">README</a> to get you started.  Building instructions are on this site.</p>
-          </div>          
-          <div class="newsitem">
-            <h3>The mostly-uzbl website</h3>
-            <span class="date">2009-04-26</span>
-            <p>Uzbl now has a website, while there isn't much on it right now, I have a TODO list of features to implement. Like a news RSS feed. Possibly a simple forum in the future. Whatever. So, this will serve as the project's home page from now on :)</p>
-          </div>          
+<?php
+echo $news;
+?>          
         </div>
       </div>
     </div>
