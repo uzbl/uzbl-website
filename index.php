@@ -49,6 +49,7 @@ $commits = array_reverse ($commits);
       
       <div id="navigation">
         <ul>
+          <li><a href="/bugs/">Bugs</a></li>
           <li><a href="/get.php">Get</a></li>
           <li><a href="/contribute.php">Contribute</a></li>
           <li id="selected"><a href="/">Home</a></li>

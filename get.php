@@ -23,6 +23,7 @@
       
       <div id="navigation">
         <ul>
+          <li><a href="/bugs/">Bugs</a></li>
           <li id="selected"><a href="/get.php">Get</a></li>
           <li><a href="/contribute.php">Contribute</a></li>
           <li><a href="/">Home</a></li>
