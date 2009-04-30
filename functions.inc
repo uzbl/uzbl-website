@@ -22,7 +22,10 @@ getfeed ($uri) {
 }
 
 function
-getnews () {
+getnews ($verbosity) { /* 1 = Display full body text
+                          0 = Display first 1000 characters of body text
+                         -1 = Display first 200 characters of body text.
+                       */
     $news        = array ();
     $dir_handle  = @opendir ('news/');
 
@@ -31,17 +34,24 @@ getnews () {
             $filenum    = str_replace ('.txt', '', $file);
             $id         = intval ($filenum);
             $contentarr = file ("news/{$file}");
-            $title      = $contentarr[0];
-            $date       = $contentarr[2];
+            $title      = trim ($contentarr[0]);
+            $date       = trim ($contentarr[2]);
 
             unset ($contentarr[0]);
             unset ($contentarr[1]);
             unset ($contentarr[2]);
             unset ($contentarr[3]);
 
-            $body       = nl2br (implode ('', $contentarr));
+            $body = trim (implode ('', $contentarr));
+            if ($verbosity == 0 and strlen ($body) > 1000) {
+                $body = substr ($body, 0, 1000) . "...";
+            } else if ($verbosity == -1 and strlen ($body) > 200) {
+                $body = substr ($body, 0, 200) . "...";
+            }
+            $body = nl2br (trim ($body));
 
-            $news[$id] = array ('title' => $title,
+            $news[$id] = array ('id'    => $id,
+                                'title' => $title,
                                 'date'  => $date,
                                 'body'  => $body);
           }

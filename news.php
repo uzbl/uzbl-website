@@ -1,3 +1,22 @@
+<?php
+error_reporting (E_ERROR | E_PARSE);
+
+require_once 'functions.inc';
+
+$newsarray = getnews (1);
+$news = "";
+
+if (isset ($newsarray[$_GET['id']])) {
+    $news = "<div class=\"newsitem\">
+               <h2>{$newsarray[$_GET['id']]['title']}</h2>
+               <span class=\"date\">{$newsarray[$_GET['id']]['date']}</span>
+               <p>{$newsarray[$_GET['id']]['body']}</p>
+             </div>";
+} else {
+    $news = "<div class=\"error\">News item could not be found.</div>";
+}
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
   <head>
@@ -7,7 +26,7 @@
 	<meta name="author" content="Michael Walker"/>
 	<meta name="robots" content="FOLLOW,INDEX"/>
 
-	<title>Contribute to Uzbl</title>
+	<title>Uzbl - the uzbl browser.</title>
 
 
 	<link rel="stylesheet" href="/template/style.css" type="text/css" />
@@ -27,18 +46,17 @@
         <ul>
           <li><a href="/bugs/">Bugs</a></li>
           <li><a href="/get.php">Get</a></li>
-          <li id="selected"><a href="/contribute.php">Contribute</a></li>
-          <li><a href="/">Home</a></li>
+          <li><a href="/contribute.php">Contribute</a></li>
+          <li id="selected"><a href="/">Home</a></li>
         </ul>
       </div>
       
       <div id="main">
-        <h2>Users</h2>
-        <p>Right now, the best way to contribute to Uzbl is to use it, hang around in our IRC channel, and tell us when things break. If you're feeling more adventerous, you can use one of the development branches and give bug reports and suggestions straight to the developer in charge of that, so the same problems don't occur when they get merged into the master branch.
-        Have a look at the CHECKLIST file to see all the stuff that is supposed to work.</p>
-
-        <h2>Developers</h2>
-        <p>If you don't feel like just sending bug reports, by all means dive into the code and clone the code to start hacking.  (github makes this really easy with their "fork" concept).</p>
+        <div id="news">
+<?php
+echo $news;
+?>          
+        </div>
       </div>
     </div>
 <script type="text/javascript">

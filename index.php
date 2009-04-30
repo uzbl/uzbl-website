@@ -25,12 +25,12 @@ ksort ($commits, SORT_NUMERIC);
 $commits = array_reverse ($commits);
 
 /* ***** News ***** */
-$newsarray = array_reverse (getnews ());
+$newsarray = array_reverse (getnews (0));
 $news = "";
 
 foreach ($newsarray as $item) {
     $news .= "<div class=\"newsitem\">
-                <h3>{$item['title']}</h3>
+                <h3><a href=\"/news.php?id={$item['id']}\" title=\"{$item['title']}\">{$item['title']}</a></h3>
                 <span class=\"date\">{$item['date']}</span>
                 <p>{$item['body']}</p>
               </div>";
@@ -49,8 +49,9 @@ foreach ($newsarray as $item) {
 	<title>Uzbl - the uzbl browser.</title>
 
 	<link rel="stylesheet" href="/template/style.css" type="text/css" />
-	<!--<link rel="shortcut icon" type="application/ico" href="/favicon.ico" />
-	<base href="http://www.uzbl.org/"/>-->
+    <link rel="alternate" type="application/atom+xml" title="Uzbl News" href="/atom.xml" />
+	<!--<link rel="shortcut icon" type="application/ico" href="/favicon.ico" />-->
+	<base href="http://www.uzbl.org/"/>
   </head>
 
   <body>

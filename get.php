@@ -9,9 +9,11 @@
 
 	<title>Get Uzbl</title>
 
+
 	<link rel="stylesheet" href="/template/style.css" type="text/css" />
-	<!--<link rel="shortcut icon" type="application/ico" href="/favicon.ico" />
-	<base href="http://www.uzbl.org/"/>-->
+    <link rel="alternate" type="application/atom+xml" title="Uzbl News" href="/atom.xml" />
+	<!--<link rel="shortcut icon" type="application/ico" href="/favicon.ico" />-->
+	<base href="http://www.uzbl.org/"/>
   </head>
 
   <body>
