@@ -25,7 +25,7 @@ ksort ($commits, SORT_NUMERIC);
 $commits = array_reverse ($commits);
 
 /* ***** News ***** */
-$newsarray = getnews ();
+$newsarray = array_reverse (getnews ());
 $news = "";
 
 foreach ($newsarray as $item) {
