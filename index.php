@@ -2,7 +2,7 @@
 error_reporting (E_ERROR | E_PARSE);
 
 require_once 'functions.inc';
-
+require_once 'markdown-1.0.1m/markdown.php';
 /* ***** Commit messages ***** */
 $master       = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/master');
 $experimental = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/experimental');
@@ -99,6 +99,7 @@ if ($gonext or $goback) {
       <div id="navigation">
         <ul>
           <li><a href="/bugs/">Bugs</a></li>
+          <li><a href="/faq.php">Faq</a></li>
           <li><a href="/get.php">Get</a></li>
           <li><a href="/contribute.php">Contribute</a></li>
           <li id="selected"><a href="/">Home</a></li>
