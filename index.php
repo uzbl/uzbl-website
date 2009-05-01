@@ -23,13 +23,14 @@ foreach ($experimental as $commit)
 }
 ksort ($commits, SORT_NUMERIC);
 $commits = array_reverse ($commits);
+/* END ugly method - there has to be a better way of doing that */
 
 /* ***** News ***** */
 $newsarray = array_reverse (getnews (0));
 $newscount = count ($newsarray);
 $news      = "";
 
-// Pagintation
+/* Pagintation */
 $newsperpage = 20;
 $page        = (! isset ($_GET['page']) || ! is_numeric ($_GET['page'])) ? 0 : intval ($_GET['page']);
 $gonext      = FALSE;
@@ -49,6 +50,7 @@ if ($page > 0) {
     }
 }
 
+/* News display */
 foreach ($newsarray as $item) {
     $news .= "<div class=\"newsitem\">
                 <h3><a href=\"/news.php?id={$item['id']}\" title=\"{$item['title']}\">{$item['title']}</a></h3>
