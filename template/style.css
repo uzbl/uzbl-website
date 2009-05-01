@@ -172,3 +172,9 @@ h3
 {
     margin:0px 10px 0px 10px;
 }
+
+.error
+{
+    color:#FF0000;
+    font-weight:bold;
+}

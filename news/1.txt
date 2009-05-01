@@ -1,0 +1,5 @@
+The mostly-uzbl website
+
+2009-04-26
+
+Uzbl now has a website, while there isn't much on it right now, I have a TODO list of features to implement. Like a news RSS feed. Possibly a simple forum in the future. Whatever. So, this will serve as the project's home page from now on :)

@@ -1,0 +1,32 @@
+<?php
+
+require_once 'functions.inc';
+
+$newsarray = array_reverse (getnews (-1));
+$news = "";
+
+foreach ($newsarray as $item) {
+    $safebody = htmlentities ($item['body']);
+    $safebody = str_replace ('&lt;br /&gt;', '<br />', $safebody);
+    $news .= "
+    <entry>
+        <title>{$item['title']}</title>
+        <updated>{$item['date']}</updated>
+        <link href=\"http://www.uzbl.org/news.php?id={$item['id']}\"/>
+        <summary>{$safebody}</summary>
+    </entry>";
+}
+
+$feedtitle = 'Uzbl News';
+
+echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>
+<feed xmlns=\"http://www.w3.org/2005/Atom\">
+ 
+   <title>{$feedtitle}</title>
+   <link href=\"http://www.uzbl.org/atom.xml\" rel=\"self\"/>
+   <link href=\"http://www.uzbl.org/\"/>
+{$news}
+
+</feed>";
+
+?>

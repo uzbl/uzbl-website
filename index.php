@@ -3,6 +3,7 @@ error_reporting (E_ERROR | E_PARSE);
 
 require_once 'functions.inc';
 
+/* ***** Commit messages ***** */
 $master       = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/master');
 $experimental = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/experimental');
 
@@ -23,6 +24,18 @@ foreach ($experimental as $commit)
 ksort ($commits, SORT_NUMERIC);
 $commits = array_reverse ($commits);
 
+/* ***** News ***** */
+$newsarray = array_reverse (getnews (0));
+$news = "";
+
+foreach ($newsarray as $item) {
+    $news .= "<div class=\"newsitem\">
+                <h3><a href=\"/news.php?id={$item['id']}\" title=\"{$item['title']}\">{$item['title']}</a></h3>
+                <span class=\"date\">{$item['date']}</span>
+                <p>{$item['body']}</p>
+              </div>";
+}
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
@@ -36,8 +49,9 @@ $commits = array_reverse ($commits);
 	<title>Uzbl - the uzbl browser.</title>
 
 	<link rel="stylesheet" href="/template/style.css" type="text/css" />
-	<!--<link rel="shortcut icon" type="application/ico" href="/favicon.ico" />
-	<base href="http://www.uzbl.org/"/>-->
+    <link rel="alternate" type="application/atom+xml" title="Uzbl News" href="/atom.xml" />
+	<!--<link rel="shortcut icon" type="application/ico" href="/favicon.ico" />-->
+	<base href="http://www.uzbl.org/"/>
   </head>
 
   <body>
@@ -49,6 +63,7 @@ $commits = array_reverse ($commits);
       
       <div id="navigation">
         <ul>
+          <li><a href="/bugs/">Bugs</a></li>
           <li><a href="/get.php">Get</a></li>
           <li><a href="/contribute.php">Contribute</a></li>
           <li id="selected"><a href="/">Home</a></li>
@@ -112,18 +127,9 @@ foreach ($commits as $comm)
         
         <div id="news">
           <h2>Latest News</h2>
-          
-          <div class="newsitem">
-            <h3>First prototype</h3>
-            <span class="date">2009-04-27</span>
-            <p>We have something usable now.  You can run uzbl and try out the browsing and loading new url's from history and/or bookmark file.  Editing url's is a bit cumbersome for now.
-            <br/>Please see <a href="http://github.com/Dieterbe/uzbl/blob/c5523c7882cbd37b3c117ba178b44b751d0b65cd/README">README</a> to get you started.  Building instructions are on this site.</p>
-          </div>          
-          <div class="newsitem">
-            <h3>The mostly-uzbl website</h3>
-            <span class="date">2009-04-26</span>
-            <p>Uzbl now has a website, while there isn't much on it right now, I have a TODO list of features to implement. Like a news RSS feed. Possibly a simple forum in the future. Whatever. So, this will serve as the project's home page from now on :)</p>
-          </div>          
+<?php
+echo $news;
+?>          
         </div>
       </div>
     </div>

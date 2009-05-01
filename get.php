@@ -9,9 +9,11 @@
 
 	<title>Get Uzbl</title>
 
+
 	<link rel="stylesheet" href="/template/style.css" type="text/css" />
-	<!--<link rel="shortcut icon" type="application/ico" href="/favicon.ico" />
-	<base href="http://www.uzbl.org/"/>-->
+    <link rel="alternate" type="application/atom+xml" title="Uzbl News" href="/atom.xml" />
+	<!--<link rel="shortcut icon" type="application/ico" href="/favicon.ico" />-->
+	<base href="http://www.uzbl.org/"/>
   </head>
 
   <body>
@@ -23,6 +25,7 @@
       
       <div id="navigation">
         <ul>
+          <li><a href="/bugs/">Bugs</a></li>
           <li id="selected"><a href="/get.php">Get</a></li>
           <li><a href="/contribute.php">Contribute</a></li>
           <li><a href="/">Home</a></li>

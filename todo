@@ -1,7 +1,7 @@
-* TODO Make news/index page dynamic
-* TODO Add news pagintation.
-* TODO Add news article pages.
-* TODO Add news RSS feed.
+* DONE Make news/index page dynamic
+* TODO Add news pagintation. //not very critical imho (Dieter)
+* DONE Add news article pages.
+* DONE Add news RSS feed. (Atom)
 * TODO Possibly a simple forum. // <-- no thanks. (Dieter) forums are just a poor substitute for mailing lists
-* TODO Template system.
-* TODO Trac?
+* TODO Template system.  Don't repeat the same code on multiple places
+* DONE Trac? (Flyspray)

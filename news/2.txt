@@ -1,0 +1,6 @@
+First prototype
+
+2009-04-27 
+
+We have something usable now. You can run uzbl and try out the browsing and loading new url's from history and/or bookmark file. Editing url's is a bit cumbersome for now. 
+Please see <a href="http://github.com/Dieterbe/uzbl/blob/c5523c7882cbd37b3c117ba178b44b751d0b65cd/README">README</a> to get you started. Building instructions are on this site.
