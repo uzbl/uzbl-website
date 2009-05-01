@@ -178,3 +178,15 @@ h3
     color:#FF0000;
     font-weight:bold;
 }
+
+#newslinks
+{
+    list-style:none;
+    font-size:10px;
+    font-weight:bold;
+}
+
+#newslinks li
+{
+    margin-bottom:5px;
+}
