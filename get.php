@@ -19,7 +19,7 @@
   <body>
     <div id="page">
       <div id="header">
-        <h1>Uzbl</h1>
+        <img src="img/uzbl-logo.png" />
         <p>The uzbl browser.</p>
       </div>
       
