@@ -26,9 +26,9 @@ $commits = array_reverse ($commits);
 /* END ugly method - there has to be a better way of doing that */
 
 /* ***** News ***** */
-$newsarray = array_reverse (getnews (0));
-$newscount = count ($newsarray);
-$news      = "";
+$newsarray = getnews (0);
+krsort($newsarray);
+$news = "";
 
 /* Pagintation */
 $newsperpage = 20;
@@ -92,7 +92,7 @@ if ($gonext or $goback) {
   <body>
     <div id="page">
       <div id="header">
-        <h1>Uzbl</h1>
+        <img src="img/uzbl-logo.png" />
         <p>The uzbl browser.</p>
       </div>
       
@@ -159,6 +159,7 @@ foreach ($commits as $comm)
           <p>Uzbl follows the UNIX philosophy - &quot;Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.&quot;</p>
           <p>Uzbl is under heavy development at the moment and shouldn't really be used as your main browser. Unless you're daring of course. The latest 'stable' branch is located in Dieterbe's master branch, and the latest development version in his experimental branch. You can, however, run code from the other developers branches, it just might not work.</p>
           <p>You can find us in IRC at irc.freenode.net, in channel #uzbl.</p>
+          <a href="/img/screenshot-1.png"><img src="/img/screenshot-1-thumb.png" alt="screenshot thumbnail" /></a>
         </div>
         
         <div id="news">
