@@ -83,7 +83,7 @@ if ($gonext or $goback) {
 
 	<title>Uzbl - the uzbl browser.</title>
 
-	<link rel="stylesheet" href="/template/<?php echo (! isset ($_GET['css'])) ? "style.css" : $_GET['css']; ?>" type="text/css" />
+	<link rel="stylesheet" href="/template/<?php echo (! isset ($_GET['css'])) ? "style" : $_GET['css']; ?>.css" type="text/css" />
     <link rel="alternate" type="application/atom+xml" title="Uzbl News" href="/atom.xml" />
 	<!--<link rel="shortcut icon" type="application/ico" href="/favicon.ico" />-->
 	<base href="http://www.uzbl.org/"/>
