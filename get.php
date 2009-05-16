@@ -37,7 +37,7 @@
       <div id="main">
       <?php
         require_once 'markdown-1.0.1m/markdown.php';
-        echo Markdown(file_get_contents('../uzbl/docs/INSTALLING'));?>
+        echo Markdown(file_get_contents('../uzbl/docs/INSTALL'));?>
       </div>
     </div>
 <script type="text/javascript">
