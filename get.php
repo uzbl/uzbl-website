@@ -26,9 +26,10 @@
       <div id="navigation">
         <ul>
           <li><a href="/bugs/">Bugs</a></li>
-          <li><a href="/faq.php">Faq</a></li>
-          <li id="selected"><a href="/get.php">Get</a></li>
           <li><a href="/contribute.php">Contribute</a></li>
+          <li id="selected"><a href="/get.php">Get</a></li>
+          <li><a href="/readme.php">Readme</a></li>
+          <li><a href="/faq.php">Faq</a></li>
           <li><a href="/">Home</a></li>
         </ul>
       </div>
@@ -36,7 +37,7 @@
       <div id="main">
       <?php
         require_once 'markdown-1.0.1m/markdown.php';
-        echo Markdown(file_get_contents('../uzbl/INSTALLING'));?>
+        echo Markdown(file_get_contents('../uzbl/docs/INSTALLING'));?>
       </div>
     </div>
 <script type="text/javascript">
