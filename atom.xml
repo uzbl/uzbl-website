@@ -2,18 +2,16 @@
 
 require_once 'functions.inc';
 
-$newsarray = array_reverse (getnews (-1));
+$newsarray = array_reverse (getnews (1));
 $news = "";
 
 foreach ($newsarray as $item) {
-    $safebody = htmlentities ($item['body']);
-    $safebody = str_replace ('&lt;br /&gt;', '<br />', $safebody);
     $news .= "
     <entry>
         <title>{$item['title']}</title>
         <updated>{$item['date']}</updated>
         <link href=\"http://www.uzbl.org/news.php?id={$item['id']}\"/>
-        <summary>{$safebody}</summary>
+        <summary>{$item['body']}</summary>
     </entry>";
 }
 
