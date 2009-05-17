@@ -137,13 +137,21 @@ foreach ($commits as $comm)
                 <li><a href="http://github.com/Dieterbe/uzbl/tree/master">master</a></li>
                 <li><a href="http://github.com/Dieterbe/uzbl/tree/experimental">experimental</a></li>
             </ol></li>
-            <li>dusanx
+            <li>Anydot
               <ol>
-                <li><a href="http://github.com/dusanx/uzbl/tree/master">master</a></li>
+                <li><a href="http://github.com/anydot/uzbl/tree/experimental">experimental</a></li>
             </ol></li>
             <li>Barrucadu
               <ol>
                 <li><a href="http://github.com/Barrucadu/uzbl/tree/experimental">experimental</a></li>
+            </ol></li>
+            <li>Dusanx
+              <ol>
+                <li><a href="http://github.com/dusanx/uzbl/tree/master">master</a></li>
+            </ol></li>
+            <li>Rob M
+              <ol>
+                <li><a href="http://github.com/robm/uzbl/tree/experimental">experimental</a></li>
             </ol></li>
           </ul>
         </div>
@@ -160,7 +168,6 @@ foreach ($commits as $comm)
           <p>Uzbl follows the UNIX philosophy - &quot;Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.&quot;</p>
           <p>Uzbl is under heavy development at the moment and shouldn't really be used as your main browser. Unless you're daring of course. The latest 'stable' branch is located in Dieterbe's master branch, and the latest development version in his experimental branch. You can, however, run code from the other developers branches, it just might not work.</p>
           <p>You can find us in IRC at irc.freenode.net, in channel #uzbl.</p>
-          <a href="/img/screenshot-1.png"><img src="/img/screenshot-1-thumb.png" alt="screenshot thumbnail" /></a>
         </div>
         
         <div id="news">

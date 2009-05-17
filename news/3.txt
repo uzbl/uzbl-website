@@ -1,0 +1,28 @@
+Some updates
+
+2009-05-08
+
+Various things have been improved/added recently.  Here are the main ones. 
+I may have forgotten some.
+
+- Keyboard based link following (uses link numbering for now)
+- Customizable statusbar (both in what it shows, and in colors)
+- Network settings (max connections, proxy, user agent (with variable replacement))
+- Searching
+- multichar key bindings
+- bindings that can use arguments (other browsers call this "keywords")
+
+You can find these new goodies in the master and experimental branches.
+Don't forget to have a good look at the sample configs and scripts, and the
+docs.
+
+Thanks to all contributors!
+
+We also have a logo now, thanks Thorsten Wilms!
+
+TODO:
+- some sort of "multiple instances management" (Not saying tabs)
+- cookies
+- much more
+
+<a href="/img/screenshot-1.png"><img src="/img/screenshot-1-thumb.png" alt="screenshot thumbnail" /></a>

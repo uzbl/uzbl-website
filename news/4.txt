@@ -1,0 +1,21 @@
+More updates
+
+2009-05-17
+
+The master branch is again in sync with the experimental one and brings you these features:
+- overhauled the config system. no more ini-files.  We now use files with commands in the same syntax as what you write to the fifo/pipes etc.
+- Entire configuration can be altered at runtime.
+- more advanced binding and command parsing options (see sample config)
+- support for dmenu-vertical (see screenshot).  The sample scripts allow you to also search in page titles, bookmark tags etc if you have dmenu-vertical installed
+- customizable window title
+- massive documentation updates, which are also reflected on the website
+- and quite a lot smaller fixes, additions and sample scripts...
+
+As usual, plenty of people have been contributing to uzbl, and we keep welcoming new people.
+See the AUTHORS file for details.
+Thanks all!
+
+<a href="/img/screenshot-2.png"><img src="/img/screenshot-2-thumb.png" alt="screenshot thumbnail" /></a>
+
+
+Dieter
