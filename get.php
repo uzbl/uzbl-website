@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" href="/template/style.css" type="text/css" />
     <link rel="alternate" type="application/atom+xml" title="Uzbl News" href="/atom.xml" />
-	<!--<link rel="shortcut icon" type="application/ico" href="/favicon.ico" />-->
+	<link rel="shortcut icon" type="image/png" href="/favicon.png" />
 	<base href="http://www.uzbl.org/"/>
   </head>
 

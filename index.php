@@ -23,12 +23,34 @@ foreach ($experimental as $commit)
 }
 ksort ($commits, SORT_NUMERIC);
 $commits = array_reverse ($commits);
+/* END ugly method - there has to be a better way of doing that */
 
 /* ***** News ***** */
 $newsarray = getnews (0);
 krsort($newsarray);
 $news = "";
 
+/* Pagintation */
+$newsperpage = 20;
+$page        = (! isset ($_GET['page']) || ! is_numeric ($_GET['page'])) ? 0 : intval ($_GET['page']);
+$gonext      = FALSE;
+$goback      = FALSE;
+$nextpage    = $page + 1;
+$lastpage    = $page - 1;
+
+for ($i = ($page * $newsperpage) + $newsperpage; $i < $newscount; $i ++) {
+    unset ($newsarray[$i]);
+    $gonext = TRUE;
+}
+
+if ($page > 0) {
+  for ($i = 0; $i < $page * $newsperpage and $i < $newscount; $i ++) {
+        unset ($newsarray[$i]);
+        $goback = TRUE;
+    }
+}
+
+/* News display */
 foreach ($newsarray as $item) {
     $news .= "<div class=\"newsitem\">
                 <h3><a href=\"/news.php?id={$item['id']}\" title=\"{$item['title']}\">{$item['title']}</a></h3>
@@ -37,6 +59,18 @@ foreach ($newsarray as $item) {
               </div>";
 }
 
+$newslinks = "";
+if ($gonext or $goback) {
+    $newslinks = '<ul id="newslinks">';
+    if ($gonext) {
+        $newslinks .= "<li><a href=\"http://www.uzbl.org/index.php?page={$nextpage}\">Next &raquo;</a></li>";
+    }
+
+    if ($goback) {
+        $newslinks .= "<li><a href=\"http://www.uzbl.org/index.php?page={$lastpage}\">Previous &laquo;</a></li>";
+    }
+    $newslinks .= '</ul>';
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
@@ -49,9 +83,9 @@ foreach ($newsarray as $item) {
 
 	<title>Uzbl - the uzbl browser.</title>
 
-	<link rel="stylesheet" href="/template/style.css" type="text/css" />
+	<link rel="stylesheet" href="/template/<?php echo (! isset ($_GET['css'])) ? "style" : $_GET['css']; ?>.css" type="text/css" />
     <link rel="alternate" type="application/atom+xml" title="Uzbl News" href="/atom.xml" />
-	<!--<link rel="shortcut icon" type="application/ico" href="/favicon.ico" />-->
+	<link rel="shortcut icon" type="image/png" href="/favicon.png" />
 	<base href="http://www.uzbl.org/"/>
   </head>
 
@@ -133,6 +167,7 @@ foreach ($commits as $comm)
           <h2>Latest News</h2>
 <?php
 echo $news;
+echo $newslinks;
 ?>          
         </div>
       </div>
