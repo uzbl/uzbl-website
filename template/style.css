@@ -81,9 +81,11 @@ h3
     display:block;
     width:100%;
     clear:both;
-    margin:0px;
+    margin:0px 0px 10px 0px;
     padding:0px;
-    background-color:#999999;
+    background-color:#575757;
+    border-top:1px solid #000000;
+    border-bottom:1px solid #000000;
 }
 
 #navigation ul li
@@ -93,10 +95,9 @@ h3
 
 #navigation a
 {
-    color:#ffffff;
     display:block;
     float:right;
-    width:150px;
+    width:100px;
     padding:10px 0px 10px 0px;
     margin:0px;
     text-decoration:none;
@@ -105,17 +106,22 @@ h3
 
 #navigation a:visited, #navigation a:link
 {
-    background-color:#999999;
+    background-color:#575757;
+    color:#ffffff;
 }
 
 #navigation li#selected a:visited, #navigation li#selected a:link
 {
-    background-color:#aaaaaa;
+    background-color:#f9f9f5;
+    border-left:1px solid #000000;
+    border-right:1px solid #000000;
+    color:#000000;
 }
 
 #navigation a:active, #navigation a:hover
 {
-    background-color:#658bb5;
+    background-color:#ddff95;
+    color:#000000;
 }
 
 #left, #right, #main
