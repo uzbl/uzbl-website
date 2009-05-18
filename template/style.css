@@ -196,3 +196,18 @@ h3
 {
     margin-bottom:5px;
 }
+
+#morecommits
+{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+
+#morecommits .commithead .branch, #morecommits .commithead .commitdate
+{
+    float:right;
+    font-size:10px;
+    display:block;
+    padding:0px 5px 0px 5px;
+}

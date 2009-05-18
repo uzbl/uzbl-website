@@ -126,6 +126,7 @@ foreach ($commits as $comm)
     }
 }
 ?>
+            <li><a href="/commits.php">More&hellip;</a></li>
           </ul>
         </div>
         
