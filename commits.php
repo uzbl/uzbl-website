@@ -68,12 +68,8 @@ $num_commits = 0;
 foreach ($commits as $comm)
   {
     if ($num_commits < $commit_limit) {
-      $title = $comm['title'];
-      if (strlen ($title) > 35)
-        $title = substr ($title, 0, 32) . '...';
-      
       echo "<li>\n";
-      echo "<span class='commithead'><h3><a href='{comm['permalink']}'>{$title}</a></h3> <span class='commitdate'>{$comm['date']}</span> <span class='branch'><a href='http://github.com/Dieterbe/uzbl/tree/{$comm['branch']}'>{$comm['branch']}</a></span></span>\n";
+      echo "<span class='commithead'><h3><a href='{$comm['permalink']}'>{$comm['title']}</a></h3> <span class='commitdate'>{$comm['date']}</span> <span class='branch'><a href='http://github.com/Dieterbe/uzbl/tree/{$comm['branch']}'>{$comm['branch']}</a></span></span>\n";
       echo "{$comm['description']}\n";
       echo "</li>\n";
       $num_commits++;
