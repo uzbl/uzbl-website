@@ -60,7 +60,7 @@ $commits = array_reverse ($commits);
       </div>
       
       <div id="main">
-        <h2>Last 50 Commits</h2>
+        <h2>Last 20 Commits</h2>
         <ul id="morecommits">
 <?php
 $num_commits = 0;
