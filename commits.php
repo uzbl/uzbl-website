@@ -6,22 +6,7 @@ require_once 'markdown-1.0.1m/markdown.php';
 
 $master       = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/master');
 $experimental = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/experimental');
-
-$commits      = array ();
-$commit_limit = 50; // 50 should be enough...
-
-foreach ($master as $commit)
-{
-    $commits[$commit['date2']]           = $commit;
-    $commits[$commit['date2']]['branch'] = 'master';
-}
-foreach ($experimental as $commit)
-{
-    $commits[$commit['date2']]           = $commit;
-    $commits[$commit['date2']]['branch'] = 'experimental';
-}
-ksort ($commits, SORT_NUMERIC);
-$commits = array_reverse ($commits);
+$commit_limit = 10; // All commits from the feeds
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -63,14 +48,30 @@ $commits = array_reverse ($commits);
         <h2>Last 20 Commits</h2>
         <ul id="morecommits">
 <?php
+
 $num_commits = 0;
 
-foreach ($commits as $comm)
+foreach ($experimental as $commit)
   {
     if ($num_commits < $commit_limit) {
       echo "<li>\n";
-      echo "<span class='commithead'><h3><a href='{$comm['permalink']}'>{$comm['title']}</a></h3> <span class='commitdate'>{$comm['date']}</span> <span class='branch'><a href='http://github.com/Dieterbe/uzbl/tree/{$comm['branch']}'>{$comm['branch']}</a></span></span>\n";
-      echo "{$comm['description']}\n";
+      echo "<span class='commithead'><h3><a href='{$commit['permalink']}'>{$commit['title']}</a></h3> <span class='commitdate'>{$commit['date']}</span> <span class='branch'><a href='http://github.com/Dieterbe/uzbl/tree/experimental'>experimental</a></span></span>\n";
+      echo "{$commit['description']}\n";
+      echo "</li>\n";
+      $num_commits++;
+    }
+  }
+
+echo "<li><hr/></li>\n";
+
+$num_commits = 0;
+
+foreach ($master as $commit)
+  {
+    if ($num_commits < $commit_limit) {
+      echo "<li>\n";
+      echo "<span class='commithead'><h3><a href='{$commit['permalink']}'>{$commit['title']}</a></h3> <span class='commitdate'>{$commit['date']}</span> <span class='branch'><a href='http://github.com/Dieterbe/uzbl/tree/master'>master</a></span></span>\n";
+      echo "{$commit['description']}\n";
       echo "</li>\n";
       $num_commits++;
     }

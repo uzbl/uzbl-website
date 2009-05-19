@@ -6,24 +6,7 @@ require_once 'markdown-1.0.1m/markdown.php';
 /* ***** Commit messages ***** */
 $master       = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/master');
 $experimental = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/experimental');
-
-$commits      = array ();
-$commit_limit = 15; // Only show the 15 most recent commits.
-
-/* BEGIN ugly method */
-foreach ($master as $commit)
-{
-    $commits[$commit['date2']]           = $commit;
-    $commits[$commit['date2']]['branch'] = 'master';
-}
-foreach ($experimental as $commit)
-{
-    $commits[$commit['date2']]           = $commit;
-    $commits[$commit['date2']]['branch'] = 'experimental';
-}
-ksort ($commits, SORT_NUMERIC);
-$commits = array_reverse ($commits);
-/* END ugly method - there has to be a better way of doing that */
+$commit_limit = 7; // Only show the 7 most recent commits from each branch.
 
 /* ***** News ***** */
 $newsarray = getnews (0);
@@ -112,16 +95,33 @@ if ($gonext or $goback) {
           <h2>Recent Commits</h2>
           <ul>
 <?php
+
 $num_commits = 0;
 
-foreach ($commits as $comm)
+foreach ($experimental as $commit)
 {
     if ($num_commits < $commit_limit) {
-        $title = $comm['title'];
+        $title = $commit['title'];
         if (strlen ($title) > 35)
             $title = substr ($title, 0, 32) . '...';
 
-        echo "<li>{$title} <span class='branch'>{$comm['branch']}</span></li>\n";
+        echo "<li>{$title} <span class='branch'>experimental</span></li>\n";
+        $num_commits++;
+    }
+}
+
+echo "<li><h2/></li>\n";
+
+$num_commits = 0;
+
+foreach ($master as $commit)
+{
+    if ($num_commits < $commit_limit) {
+        $title = $commit['title'];
+        if (strlen ($title) > 35)
+            $title = substr ($title, 0, 32) . '...';
+
+        echo "<li>{$title} <span class='branch'>master</span></li>\n";
         $num_commits++;
     }
 }
