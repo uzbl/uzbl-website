@@ -19,7 +19,7 @@ $phatso = new Phatso();
 $phatso->run ($URLS);
 
 function exec_Index (&$app, $params) {
-    $navigation = navigation ('/');
+    $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
     $commits  = recentcommits ('experimental', 7, false);
@@ -34,7 +34,7 @@ function exec_Index (&$app, $params) {
 }
 
 function exec_FAQ (&$app, $params) {
-    $navigation = navigation ('faq.php');
+    $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
     $content = Markdown(file_get_contents('../uzbl/docs/FAQ'));
@@ -44,7 +44,7 @@ function exec_FAQ (&$app, $params) {
 }
 
 function exec_Readme (&$app, $params) {
-    $navigation = navigation ('readme.php');
+    $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
     $content = Markdown(file_get_contents('../uzbl/README'));
@@ -54,7 +54,7 @@ function exec_Readme (&$app, $params) {
 }
 
 function exec_Get (&$app, $params) {
-    $navigation = navigation ('get.php');
+    $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
     $content = Markdown(file_get_contents('../uzbl/docs/INSTALL'));
@@ -64,7 +64,7 @@ function exec_Get (&$app, $params) {
 }
 
 function exec_Community (&$app, $params) {
-    $navigation = navigation ('community.php');
+    $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
     $content = Markdown(file_get_contents('../uzbl/docs/COMMUNITY'));
@@ -74,7 +74,7 @@ function exec_Community (&$app, $params) {
 }
 
 function exec_Contribute (&$app, $params) {
-    $navigation = navigation ('contribute.php');
+    $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
     $content = Markdown(file_get_contents('../uzbl/docs/CONTRIBUTING'));
@@ -84,7 +84,7 @@ function exec_Contribute (&$app, $params) {
 }
 
 function exec_Commits (&$app, $params) {
-    $navigation = navigation ('commits.php');
+    $navigation = navigation ();
     $app->set ('navigation', $navigation);
 
     $commits  = "<ul id=\"morecommits\">\n";
@@ -99,7 +99,7 @@ function exec_Commits (&$app, $params) {
 }
 
 function exec_News (&$app, $params) {
-    $navigation = navigation ('news.php');
+    $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
     $newsarray = getnews (1);

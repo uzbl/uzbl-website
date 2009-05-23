@@ -137,7 +137,7 @@ news ($page) {
 }
 
 function
-navigation ($uri) {
+navigation () {
     $pages = array ('/'              => 'Home',
                     'faq.php'        => 'FAQ',
                     'readme.php'     => 'Readme',
@@ -147,7 +147,7 @@ navigation ($uri) {
                     'bugs/'          => 'Bugs');
 
     $indexaliases = array ('', 'index.php', 'news.php', 'commits.php'); // These things should highlight "Home" in the navbar.
-    $uri          = str_replace ('/', '', $uri);
+    $uri          = str_replace ('/', '', $_SERVER['REDIRECT_URL']);
     $uri          = (in_array ($uri, $indexaliases)) ? '/' : $uri;
 
     $output = '';

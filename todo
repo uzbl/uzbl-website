@@ -9,4 +9,4 @@
 * DONE More detailed commits
   CLOSED: [2009-05-18 Mon 11:53]
 
-* TODO Edit navigation() so the URI of the page doesn't need to be specified ($_SERVER);
+* DONE Edit navigation() so the URI of the page doesn't need to be specified ($_SERVER);
