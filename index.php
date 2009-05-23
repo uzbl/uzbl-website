@@ -83,6 +83,7 @@ if ($gonext or $goback) {
         <ul>
           <li><a href="/bugs/">Bugs</a></li>
           <li><a href="/contribute.php">Contribute</a></li>
+          <li><a href="/community.php">Comunnity</a></li>
           <li><a href="/get.php">Get</a></li>
           <li><a href="/readme.php">Readme</a></li>
           <li><a href="/faq.php">Faq</a></li>
