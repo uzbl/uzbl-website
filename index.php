@@ -22,9 +22,9 @@ function exec_Index (&$app, $params) {
     $navigation = navigation ('/');
     $app->set ('navigation', $navigation);
     
-    $commits  = recentcommits ('master', 7);
+    $commits  = recentcommits ('experimental', 7, false);
     $commits .= "<li><hr /></li>\n";
-    $commits .= recentcommits ('experimental', 7);
+    $commits .= recentcommits ('master', 7, false);
     $app->set ('recentcommits', $commits);
     
     $news = news ((! isset ($_GET['page']) || ! is_numeric ($_GET['page'])) ? 0 : intval ($_GET['page']));
@@ -86,8 +86,14 @@ function exec_Contribute (&$app, $params) {
 function exec_Commits (&$app, $params) {
     $navigation = navigation ('commits.php');
     $app->set ('navigation', $navigation);
-        
-    $app->set ('content', $content);
+
+    $commits  = "<ul id=\"morecommits\">\n";
+    $commits .= recentcommits ('experimental', 7, true);
+    $commits .= "<li><hr /></li>\n";
+    $commits .= recentcommits ('master', 7, true);
+    $commits .= "</ul>\n";
+
+    $app->set ('content', $commits);
 
     $app->render ('1col.php');
 }
