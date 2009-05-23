@@ -7,4 +7,4 @@ RewriteRule ^(.*)$ $1/ [N]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !-d
-RewriteRule (.*) index-phatso.php
+RewriteRule (.*) index.php
