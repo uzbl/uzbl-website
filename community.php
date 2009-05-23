@@ -26,7 +26,7 @@
       <div id="navigation">
         <ul>
           <li><a href="/bugs/">Bugs</a></li>
-          <li><a href="/contribute.php">Conntribute</a></li>
+          <li><a href="/contribute.php">Contribute</a></li>
           <li id="selected"><a href="/community.php">Community</a></li>
           <li><a href="/get.php">Get</a></li>
           <li><a href="/readme.php">Readme</a></li>
