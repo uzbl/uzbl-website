@@ -7,7 +7,7 @@
 	<meta name="author" content="Michael Walker"/>
 	<meta name="robots" content="FOLLOW,INDEX"/>
 
-	<title>Uzbl Readme</title>
+	<title>Contribute to Uzbl</title>
 
 
 	<link rel="stylesheet" href="/template/style.css" type="text/css" />
@@ -26,19 +26,19 @@
       <div id="navigation">
         <ul>
           <li><a href="/bugs/">Bugs</a></li>
-          <li><a href="/contribute.php">Contribute</a></li>
-          <li><a href="/community.php">Comunnity</a></li>
+          <li><a href="/contribute.php">Conntribute</a></li>
+          <li id="selected"><a href="/community.php">Community</a></li>
           <li><a href="/get.php">Get</a></li>
-          <li id="selected"><a href="/readme.php">Readme</a></li>
+          <li><a href="/readme.php">Readme</a></li>
           <li><a href="/faq.php">Faq</a></li>
           <li><a href="/">Home</a></li>
         </ul>
       </div>
       
       <div id="main">
-      <?php
-        require_once 'markdown-1.0.1m/markdown.php';
-        echo Markdown(file_get_contents('../uzbl/README'));?>
+         <?php
+            require_once 'markdown-1.0.1m/markdown.php';
+            echo Markdown(file_get_contents('../uzbl/docs/COMMUNITY'));?>
       </div>
     </div>
 <script type="text/javascript">
