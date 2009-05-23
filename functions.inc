@@ -67,7 +67,7 @@ recentcommits ($branch, $limit) {
     $output      = '';
 
     foreach ($commits as $commit) {
-        if ($num_commits < $commit_limit) {
+        if ($num_commits < $limit) {
             $title = $commit['title'];
             if (strlen ($title) > 35)
                 $title = substr ($title, 0, 32) . '...';
@@ -76,12 +76,13 @@ recentcommits ($branch, $limit) {
             $num_commits++;
         }
     }
+
     return $output;
 }
 
 
 function
-getnews ($page) {
+news ($page) {
     $newsarray = getnews (0);
     krsort ($newsarray);
     $news = "";
@@ -144,13 +145,11 @@ navigation ($uri) {
     $uri          = str_replace ('/', '', $uri);
     $uri          = (in_array ($uri, $indexaliases)) ? '/' : $uri;
 
-    arsort ($pages); // The list is needed in reverse order because we float each element.
-
     $output = '';
     foreach ($pages as $page => $name) {
-        $id      = ($page == $uri) ? ' id="selected"' : '';
-        $link    = (substr ($page, 0, 1) == '/') ? "/{$page}" : $page;
-        $output .= "<li{$id}><a href=\"{$page}\">{$name}</a></li>\n";
+        $id     = ($page == $uri) ? ' id="selected"' : '';
+        $link   = (substr ($page, 0, 1) == '/') ? "/{$page}" : $page;
+        $output = "<li{$id}><a href=\"{$page}\">{$name}</a></li>\n{$output}";
     }
 
     return $output;

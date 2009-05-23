@@ -54,6 +54,7 @@ class Phatso
 		if(!function_exists("exec_{$action}")) {
 			$this->status('404', 'File not found');
 		}
+
 		call_user_func("exec_{$action}", $this, $params);
 	}
 
