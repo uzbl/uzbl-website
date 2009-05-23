@@ -58,3 +58,4 @@
     <h2>Latest News</h2>
     <?php echo $news; ?>          
   </div>
+</div>

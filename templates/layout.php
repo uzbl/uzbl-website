@@ -24,7 +24,6 @@
       
 <?php echo $CONTENT_FOR_LAYOUT ?>
 
-      </div>
     </div>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
