@@ -1,0 +1,8 @@
+Mailing list
+
+2009-05-23
+
+We now have a mailing list: uzbl-dev@lists.uzbl.org
+This will be the place for discussions.
+
+For more info, see the new <a href="/community.php">community</a> page.
