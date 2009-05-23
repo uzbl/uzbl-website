@@ -32,7 +32,7 @@ function exec_FAQ (&$app, $params) {
     $app->set ('navigation', $navigation);
     
     $faq = Markdown(file_get_contents('../uzbl/docs/FAQ'));
-    $app->set ('markdown', $markdown);
+    $app->set ('content', $faq);
 
     $app->render ('1col.php');
 }

@@ -5,5 +5,5 @@
 </div>
 
 <div id="main">
-  <?php echo $markdown; ?>
+  <?php echo $content; ?>
 </div>
