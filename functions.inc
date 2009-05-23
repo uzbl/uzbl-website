@@ -161,4 +161,13 @@ navigation () {
     return $output;
 }
 
+function
+markdown_file ($file) {
+    $filecontents = file_get_contents ($file);
+    $filecontents = htmlentities      ($filecontents);
+    $markdown     = Markdown          ($filecontents);
+
+    return $markdown;
+}
+
 ?>

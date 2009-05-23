@@ -37,7 +37,7 @@ function exec_FAQ (&$app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
-    $content = Markdown(file_get_contents('../uzbl/docs/FAQ'));
+    $content = markdown_file('../uzbl/docs/FAQ');
     $app->set ('content', $content);
 
     $app->render ('1col.php');
@@ -47,7 +47,7 @@ function exec_Readme (&$app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
-    $content = Markdown(file_get_contents('../uzbl/README'));
+    $content = markdown_file('../uzbl/README');
     $app->set ('content', $content);
 
     $app->render ('1col.php');
@@ -57,7 +57,7 @@ function exec_Get (&$app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
-    $content = Markdown(file_get_contents('../uzbl/docs/INSTALL'));
+    $content = markdown_file('../uzbl/docs/INSTALL');
     $app->set ('content', $content);
 
     $app->render ('1col.php');
@@ -67,7 +67,7 @@ function exec_Community (&$app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
-    $content = Markdown(file_get_contents('../uzbl/docs/COMMUNITY'));
+    $content = markdown_file('../uzbl/docs/COMMUNITY');
     $app->set ('content', $content);
 
     $app->render ('1col.php');
@@ -77,7 +77,7 @@ function exec_Contribute (&$app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
-    $content = Markdown(file_get_contents('../uzbl/docs/CONTRIBUTING'));
+    $content = markdown_file('../uzbl/docs/CONTRIBUTING');
     $app->set ('content', $content);
 
     $app->render ('1col.php');
