@@ -59,4 +59,101 @@ getnews ($verbosity) { /* 1 = Display full body text
     closedir ($dir_handle);
     return $news;
 }
+
+function
+recentcommits ($branch, $limit) {
+    $commits     = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/' . $branch);
+    $num_commits = 0;
+    $output      = '';
+
+    foreach ($commits as $commit) {
+        if ($num_commits < $commit_limit) {
+            $title = $commit['title'];
+            if (strlen ($title) > 35)
+                $title = substr ($title, 0, 32) . '...';
+
+            $output .= "<li>{$title} <span class='branch'>experimental</span></li>\n";
+            $num_commits++;
+        }
+    }
+    return $output;
+}
+
+
+function
+getnews ($page) {
+    $newsarray = getnews (0);
+    krsort ($newsarray);
+    $news = "";
+
+    /* Pagintation */
+    $newsperpage = 20;
+    $gonext      = FALSE;
+    $goback      = FALSE;
+    $nextpage    = $page + 1;
+    $lastpage    = $page - 1;
+    
+    for ($i = ($page * $newsperpage) + $newsperpage; $i < $newscount; $i ++) {
+        unset ($newsarray[$i]);
+        $gonext = TRUE;
+    }
+    
+    if ($page > 0) {
+        for ($i = 0; $i < $page * $newsperpage and $i < $newscount; $i ++) {
+            unset ($newsarray[$i]);
+            $goback = TRUE;
+        }
+    }
+    
+    /* News display */
+    foreach ($newsarray as $item) {
+        $news .= "<div class=\"newsitem\">
+                <h3><a href=\"/news.php?id={$item['id']}\" title=\"{$item['title']}\">{$item['title']}</a></h3>
+                <span class=\"date\">{$item['date']}</span>
+                <p>{$item['body']}</p>
+              </div>";
+    }
+    
+    $newslinks = "";
+    if ($gonext or $goback) {
+        $newslinks = '<ul id="newslinks">';
+        if ($gonext) {
+            $newslinks .= "<li><a href=\"http://www.uzbl.org/index.php?page={$nextpage}\">Next &raquo;</a></li>";
+        }
+        
+        if ($goback) {
+            $newslinks .= "<li><a href=\"http://www.uzbl.org/index.php?page={$lastpage}\">Previous &laquo;</a></li>";
+        }
+        $newslinks .= '</ul>';
+    }
+
+    return $news . $newslinks;
+}
+
+function
+navigation ($uri) {
+    $pages = array ('/'              => 'Home',
+                    'faq.php'        => 'FAQ',
+                    'readme.php'     => 'Readme',
+                    'get.php'        => 'Get',
+                    'community.php'  => 'Community',
+                    'contribute.php' => 'Contribute',
+                    'bugs.php'       => 'Bugs');
+
+    $indexaliases = array ('', 'index.php', 'news.php', 'commits.php'); // These things should highlight "Home" in the navbar.
+    $uri          = str_replace ('/', '', $uri);
+    $uri          = (in_array ($uri, $indexaliases)) ? '/' : $uri;
+
+    arsort ($pages); // The list is needed in reverse order because we float each element.
+
+    $output = '';
+    foreach ($pages as $page => $name) {
+        $id      = ($page == $uri) ? ' id="selected"' : '';
+        $link    = (substr ($page, 0, 1) == '/') ? "/{$page}" : $page;
+        $output .= "<li{$id}><a href=\"{$page}\">{$name}</a></li>\n";
+    }
+
+    return $output;
+}
+
 ?>

@@ -1,1 +1,10 @@
 AddHandler php5-cgi .xml
+
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} -d
+RewriteCond %{SCRIPT_FILENAME} ^.*[^\/]$
+RewriteRule ^(.*)$ $1/ [N]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !-d
+RewriteRule (.*) index-phatso.php
