@@ -4,8 +4,9 @@
 * DONE Add news article pages.
 * DONE Add news RSS feed. (Atom)
 * DONE Possibly a simple forum. // <-- no thanks. (Dieter) forums are just a poor substitute for mailing lists
-* TODO Template system.  Don't repeat the same code on multiple places - use phatso
+* DONE Template system.  Don't repeat the same code on multiple places - use phatso
 * DONE Trac? (Flyspray)
 * DONE More detailed commits
   CLOSED: [2009-05-18 Mon 11:53]
 
+* TODO Edit navigation() so the URI of the page doesn't need to be specified ($_SERVER);

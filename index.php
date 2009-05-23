@@ -102,6 +102,19 @@ function exec_News (&$app, $params) {
     $navigation = navigation ('news.php');
     $app->set ('navigation', $navigation);
     
+    $newsarray = getnews (1);
+    $news = "";
+    
+    if (isset ($newsarray[$_GET['id']])) {
+        $content = "<div class=\"newsitem\">
+                      <h2>{$newsarray[$_GET['id']]['title']}</h2>
+                      <span class=\"date\">{$newsarray[$_GET['id']]['date']}</span>
+                      <p>{$newsarray[$_GET['id']]['body']}</p>
+                    </div>";
+    } else {
+        $content = "<div class=\"error\">News item could not be found.</div>";
+    }
+
     $app->set ('content', $content);
 
     $app->render ('1col.php');
