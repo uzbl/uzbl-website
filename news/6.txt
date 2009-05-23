@@ -1,0 +1,5 @@
+Wiki
+
+2009-05-23
+
+There is now a <a href="http://www.uzbl.org/wiki">wiki</a>, to share Uzbl configs, scripts, screenshots, and suchlike.
