@@ -18,7 +18,7 @@
   <body>
     <div id="page">
       <div id="header">
-        <img src="img/uzbl-logo.png" />
+        <img src="img/uzbl-logo.png" alt="Uzbl"/>
         <p>The uzbl browser.</p>
       </div>
       
