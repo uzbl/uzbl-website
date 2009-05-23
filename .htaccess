@@ -6,5 +6,5 @@ RewriteCond %{SCRIPT_FILENAME} ^.*[^\/]$
 RewriteRule ^(.*)$ $1/ [N]
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !-d
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule (.*) index.php
