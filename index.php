@@ -5,9 +5,13 @@ require_once 'functions.inc';
 require_once 'markdown-1.0.1m/markdown.php';
 require_once 'phatso.inc';
 
-$URLS = array ('/'           => 'Index',
-               '/index.php/' => 'Index',
-               '/faq.php/'   => 'FAQ');
+$URLS = array ('/'                => 'Index',
+               '/index.php/'      => 'Index',
+               '/faq.php/'        => 'FAQ',
+               '/readme.php/'     => 'Readme',
+               '/get.php/'        => 'Get',
+               '/community.php/'  => 'Community',
+               '/contribute.php/' => 'Contribute');
 
 $phatso = new Phatso();
 $phatso->run ($URLS);
@@ -32,6 +36,46 @@ function exec_FAQ (&$app, $params) {
     $app->set ('navigation', $navigation);
     
     $faq = Markdown(file_get_contents('../uzbl/docs/FAQ'));
+    $app->set ('content', $faq);
+
+    $app->render ('1col.php');
+}
+
+function exec_Readme (&$app, $params) {
+    $navigation = navigation ('readme.php');
+    $app->set ('navigation', $navigation);
+    
+    $faq = Markdown(file_get_contents('../uzbl/README'));
+    $app->set ('content', $faq);
+
+    $app->render ('1col.php');
+}
+
+function exec_Get (&$app, $params) {
+    $navigation = navigation ('get.php');
+    $app->set ('navigation', $navigation);
+    
+    $faq = Markdown(file_get_contents('../uzbl/docs/INSTALL'));
+    $app->set ('content', $faq);
+
+    $app->render ('1col.php');
+}
+
+function exec_Community (&$app, $params) {
+    $navigation = navigation ('community.php');
+    $app->set ('navigation', $navigation);
+    
+    $faq = Markdown(file_get_contents('../uzbl/docs/COMMUNITY'));
+    $app->set ('content', $faq);
+
+    $app->render ('1col.php');
+}
+
+function exec_Contribute (&$app, $params) {
+    $navigation = navigation ('contribute.php');
+    $app->set ('navigation', $navigation);
+    
+    $faq = Markdown(file_get_contents('../uzbl/docs/CONTRIBUTING'));
     $app->set ('content', $faq);
 
     $app->render ('1col.php');
