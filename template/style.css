@@ -211,3 +211,8 @@ h3
     display:block;
     padding:0px 5px 0px 5px;
 }
+
+hr {
+    height:1px;
+    color:#e4e4e4;
+}

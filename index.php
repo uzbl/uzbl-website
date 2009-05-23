@@ -110,7 +110,7 @@ foreach ($experimental as $commit)
     }
 }
 
-echo "<li><h2/></li>\n";
+echo "<li><hr/></li>\n";
 
 $num_commits = 0;
 
