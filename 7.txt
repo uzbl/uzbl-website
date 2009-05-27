@@ -1,0 +1,19 @@
+More goodies
+
+2009-05-26
+
+The uzbl project is now just over one month old.  To celebrate that we bring you the following goodies in the master branch:
+- sample script "form filler". aids in creating and running per-domain configs for auto-filling of html form values. ( eg "remember password" but more flexible)
+- various more things to tune (autoload_images, enable_spellcheck, disable_scripts, resizeable_text_areas, default_encoding and more)
+- <a href="http://www.uzbl.org/wiki/html-mode">Html mode</a> so you can `use | uzbl | like this` and do really fancy things.
+- Webkit inspector
+- loading of JS in files
+- slightly improved command syntax (see example configs)
+- bugfixes and many small improvements (suprise !)
+- better documentation
+
+As usual, don't have too high expectations.  We are not even alpha yet...
+We've seen again great interest and input from many people.  Thanks a lot guys and girls.
+
+<a href="/wiki/_detail/uzbl_webinspector.png?id=shots">
+<img src='/wiki/_media/uzbl_webinspector.png?w=320' /></a>
