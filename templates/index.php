@@ -49,7 +49,7 @@
     <li>very minimal graphical interface. You only see what you need</li>
     <li>what is not browsing, is not in uzbl.  Things like url changing, loading/saving of bookmarks, saving history, downloads, ... are handled through <b>external</b> scripts that you write</li>
     <li>controllable through various means such as fifo and socket files, stdin, keyboard and more</li>
-    <li>advanced, customizable keyboard interface with support for modes, modkeys, multichars, keywords, variable expansion etc. (if you don't understand this: it means you can tweak the interface to be vim-like, emacs-like or any-other-program-like)</li>
+    <li>advanced, customizable keyboard interface with support for modes, modkeys, multichars, variables (keywords) etc. (eg you can tweak the interface to be vim-like, emacs-like or any-other-program-like)</li>
     <li>focus on plaintext storage for your data and configs in simple, parseable formats</li>
     <li>Uzbl keeps it simple, and puts <b>you</b> in charge.</li>
     </ul>
