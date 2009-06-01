@@ -43,15 +43,14 @@
 
 <div id="left">
   <div id="about">
-    <h2>The uzbl browser&hellip;</h2>
-    <p>&hellip;a keyboard controlled (modal vim-like bindings, or with modifier keys) browser based on Webkit.</p>
-    <p>very minimal interface.  No unnecessary interface elements</p>
-    <p>controllable through a FIFO and with external scripts.</p>
-    <p>what is not browsing, is not in uzbl.  Things like url changing, loading/saving of bookmarks, saving history,.. are handled through <b>external</b> scripts that you write</p>
-    <p>Uzbl keeps it simple, and puts <b>you</b> in charge.</p>
+    <h2>The uzbl browser</h2>
     <p>Uzbl follows the UNIX philosophy - &quot;Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.&quot;</p>
-    <p>Uzbl is under heavy development at the moment and shouldn't really be used as your main browser. Unless you're daring of course. The latest 'stable' branch is located in Dieterbe's master branch, and the latest development version in his experimental branch. You can, however, run code from the other developers branches, it just might not work.</p>
-    <p>You can find us in IRC at irc.freenode.net, in channel #uzbl.</p>
+    <p>very minimal graphical interface. You only see what you need</p>
+    <p>what is not browsing, is not in uzbl.  Things like url changing, loading/saving of bookmarks, saving history, downloads, ... are handled through <b>external</b> scripts that you write</p>
+    <p>controllable through various means such as fifo and socket files, stdin, keyboard and more</p>
+    <p>advanced, customizable keyboard interface with support for modes, modkeys, multichars, keywords, variable expansion etc. (if you don't understand this: it means you can tweak the interface to be vim-like, emacs-like or any-other-program-like)</p>
+    <p>Uzbl keeps it simple, and puts <b>you</b> in charge.</p>
+    <p>Uzbl is under heavy development.  No release has been made so far.  See the <a href="/get.php">Get uzbl</a> page</p>
   </div>
   
   <div id="news">
