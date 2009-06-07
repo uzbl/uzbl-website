@@ -88,7 +88,7 @@ recentcommits ($branch, $limit, $detailed) {
 
 function
 news ($page) {
-    $newsarray = getnews (0);
+    $newsarray = getnews (1);
     krsort ($newsarray);
     $news = "";
 
