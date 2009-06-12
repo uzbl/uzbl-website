@@ -1,0 +1,22 @@
+Cookies, custom stylesheets, and more.
+
+2009-06-06
+
+Master branch now contains/supports:
+- basic cookie support. it just stores all cookies and submits them again when visiting the same domain.  No policies or complete implementation yet. (EXPERIMENTAL)
+- override page layouts with custom stylesheets
+- improved formfiller and linkfollow scripts
+- merged the concepts of actions and commands.  you'll need to compare your configs and scripts again to the sample files.  argument order may be different too.
+- command chainging (multiple commands in one go)
+- variable expansions in your configs and commands
+- 'data:' and 'javascript:' urls
+- setting the zoomlevel (eg set to 1.0 to reset zooming)
+- dumping your entire configuration to stdout
+- customize insert/command indicators
+- should compile on BSD
+- compiles as c99
+- Makefile $PREFIX support
+- bugfixes and many small improvements (suprise !)
+The bug that bothered many people, that is when launching uzbl it would load the uri set in your config instead of the one passed on the command line, is fixed.
+
+Thanks to all contributors.
