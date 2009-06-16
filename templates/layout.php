@@ -7,7 +7,7 @@
 	<meta name="author" content="Michael Walker"/>
 	<meta name="robots" content="FOLLOW,INDEX"/>
    
-	<title>Uzbl - the uzbl browser.</title>
+	<title>Uzbl - a browser that adheres to the unix philosophy.</title>
 
 	<link rel="stylesheet" href="/style.css" type="text/css" />
     <link rel="alternate" type="application/atom+xml" title="Uzbl News" href="/atom.xml" />
