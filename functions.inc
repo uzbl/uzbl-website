@@ -69,14 +69,14 @@ recentcommits ($branch, $limit, $detailed) {
     foreach ($commits as $commit) {
         if ($num_commits < $limit) {
             if ($detailed) {
-                $output .= "<li><span class='commithead'><h3><a href='{$commit['permalink']}'>{$commit['title']}</a></h3> <span class='commitdate'>{$commit['date']}</span> <span class='branch'><a href='http://github.com/Dieterbe/uzbl/tree/experimental'>experimental</a></span></span>\n";
+                $output .= "<li><span class='commithead'><h3><a href='{$commit['permalink']}'>{$commit['title']}</a></h3> <span class='commitdate'>{$commit['date']}</span> <span class='branch'><a href='http://github.com/Dieterbe/uzbl/tree/{$branch}'>{$branch}</a></span></span>\n";
                 $output .= "{$commit['description']}</li>\n";
             } else {
                 $title = $commit['title'];
                 if (strlen ($title) > 35)
                     $title = substr ($title, 0, 32) . '...';
 
-                $output .= "<li>{$title} <span class='branch'>experimental</span></li>\n";
+                $output .= "<li>{$title} <span class='branch'>{$branch}</span></li>\n";
                 $num_commits++;
             }
         }
