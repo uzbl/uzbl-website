@@ -1,0 +1,18 @@
+Xembed, more useful sample configs/scripts and more.
+
+2009-06-20
+
+Master branch now contains/supports:
+- Gtk Plug/Socket (Xembed), comes with sample python script for tabbing uzbl
+- a simpler way to play/test/develop/use for real:
+  The same config file and set of scripts can now used for all situations, by just overriding the XDG variables.
+- patches for building on some different *nixes (BSD,OSX)
+- bugfix for segfault on multibyte backspacing.
+- Gtk icon.
+- Zoom type toggle (full content vs only text)
+
+There is a lot of stuff pending to be merged in experimental as well
+(javascript/greasemonkey/DOM exposure/full duplex socket/uzbl config language features,..), so stay tuned!
+
+As usual, thanks to all <a href="http://github.com/Dieterbe/uzbl/blob/master/AUTHORS">contributors</a>.
+The list just keeps growing and growing.
