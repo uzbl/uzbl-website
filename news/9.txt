@@ -16,3 +16,6 @@ There is a lot of stuff pending to be merged in experimental as well
 
 As usual, thanks to all <a href="http://github.com/Dieterbe/uzbl/blob/master/AUTHORS">contributors</a>.
 The list just keeps growing and growing.
+
+<a href="/wiki/_detail/uzbl-on-macosx.png?id=shots">
+<img src='/wiki/_media/uzbl-on-macosx.png?w=320' /></a>
