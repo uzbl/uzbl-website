@@ -1,0 +1,37 @@
+2 Months of hacking (working).  A status update.
+
+2009-06-21
+
+Depending on who you ask, you'll get various opinions on the state and
+usability of uzbl.  Some people are already using it full-time, others are
+waiting for (or hacking on) one or two specific features they really want.
+For me personally, what I still consider must-haves that are not finished
+yet:
+- better (faster) way of doing cookies, using one process instead of forking expensive python scripts all the time. (this is being worked on)
+- a good instance management script that considers tag/name/page state etc.
+
+Others seem to want:
+- DOM access from C ~ better link following. (this is being worked on)
+- greasemonkey and fancier JS extensions. (this is being worked on)
+- a slightly more versatile configuration language (being worked on)
+- refactoring keyboard shortcut interface
+
+
+But other then that, yeah uzbl is pretty usable.
+
+Also, I don't know about you but I just love (random) statistics so here you
+go:
+- peak amount of people on IRC: 83
+- project followers on github: 95
+- mailing list messages: 101
+- commits (experimental): 1123
+- lines of C code: 3198 (I hope this doesn't rise too much anymore)
+- lines of code in sample scripts: 1341
+- contributors: 27 (including myself)
+- website visits: 33.600 (12.681 on may 26th, the day we were on HackerNews)
+
+Furthermore, it seems like the <a href="/wiki">wiki</a> also started flourishing:
+The <a href="/wiki/howtos">howtos</a> section lists tutorials for Gentoo, Debian, Ubuntu, PLD, MacOSX and NixOS.
+And on the <a href="/wiki/scripts">scripts</a> and <a href="/wiki/config">config</a> pages people are posting really cool stuff.
+
+Dieter.
