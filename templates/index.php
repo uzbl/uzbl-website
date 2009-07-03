@@ -53,7 +53,7 @@
     <li>focus on plaintext storage for your data and configs in simple, parseable formats</li>
     <li>Uzbl keeps it simple, and puts <strong>you</strong> in charge.</li>
     </ul>
-    <p>Uzbl is under heavy development.  No release has been made so far.  See the <a href="/get.php">Get uzbl</a> page</p>
+    <p>Uzbl is under heavy development and should be considered alpha.  See the <a href="/get.php">Get uzbl</a> page</p>
   </div>
   
   <div id="news">
