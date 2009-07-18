@@ -1,0 +1,40 @@
+2009.07.18: unit testing, better variable expansion, new_window handler and more
+
+2009-07-18
+
+I recently introduced a new <a href="http://www.uzbl.org/contribute.php">contribution workflow</a> which
+allows us to handle contributions more transparantly and efficiently, and
+thanks to it, I've been able to integrate a lot of pending code.
+
+So, a 5818 lines changeset brings:
+- a unit testing framework
+- better variable expansion with support for constants and html escaping.
+- delete our old Gscanner based keyword replacer, we now use our variable expansion everywhere.
+  Note that you probably have variables such as KEYCMD, MODE, UNAME, COMMIT etc in your user
+  agent/statusbar, these will need to be replaced with the new variables/constants.
+  Look at the sample config and readme for details.
+- documentation updates (a list of all possible variables and constants, among others)
+- customizable "new window" handler for links with target="_blank" and such
+- address scheme parameter for cookie handlers (sample cookie handlers are updated)
+- cookies.py should now also work better with gmail and facebook.
+- support for calling: `uzbl example.com` (eg you don't need the `-u` flag
+  anymore), which helps integration with some other tools such as urxvt and Xfce.
+- added `--version` argument to see commit hash.
+- added `--geometry` flag to start uzbl with given geometry/position.
+- cleaned up sample config a bit
+- portability improvements (use more posix sh, work with gmake on BSD etc)
+- several small fixes and cleanups
+
+
+Get it while it's hot:
+- <a href="http://github.com/Dieterbe/uzbl/tree/2009.07.18">2009.07.18 tree</a>
+- <a href="http://github.com/Dieterbe/uzbl/tarball/2009.07.18">2009.07.18 tgz</a>
+
+
+Note: uzbl can still be quite slow if you're using a cookie handler.  This
+is because we spawn a new process (and a script for that matter) for each
+single http request.  We're working on resolving this...
+
+Again, a huge thanks to the plenty of people who've done contributions!
+
+Dieter
