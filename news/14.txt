@@ -1,0 +1,18 @@
+2009.08.26: scheme_handler, cookies_daemon.py and some fixes
+
+- scheme_handler: lets you define actions for url's who begin with 'mailto:', 'git:', 'irc:' and so on. (thanks to Tom Adams)
+
+- cookie_daemon.py: based on cookies.py, but now in daemon implementation for fast performance. 
+  For usage instructions and more info see <a href="http://www.uzbl.org/wiki/cookie_daemon.py">cookie_daemon.py wiki page</a>  
+  (Thanks Mason Larobina)
+
+- download handler gets same proxy setting as uzbl (Paweł Zuzelski),
+
+- Home/End keys forwarding
+
+
+- <a href="http://github.com/Dieterbe/uzbl/tree/2009.08.26">2009.08.26 tree</a>
+- <a href="http://github.com/Dieterbe/uzbl/tarball/2009.08.26">2009.08.26 tgz</a>
+
+
+Dieter
