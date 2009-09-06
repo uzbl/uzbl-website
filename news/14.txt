@@ -1,5 +1,7 @@
 2009.08.26: scheme_handler, cookies_daemon.py and some fixes
 
+2009-08-26
+
 - scheme_handler: lets you define actions for url's who begin with 'mailto:', 'git:', 'irc:' and so on. (thanks to Tom Adams)
 
 - cookie_daemon.py: based on cookies.py, but now in daemon implementation for fast performance. 
