@@ -1,0 +1,30 @@
+Projects based on / inspired by Uzbl
+
+2009-09-06
+
+Sometimes people disagree on some aspects and start their own project.
+Or they want more, and build something new on top of the existing codebase.
+Here is a list of all uzbl-based/inspired projects I'm aware of:
+
+- <a href="http://www.uzbl.org/wiki/uzbl_tabbed">uzbl_tabbed</a>: Python-based wrapper around uzbl (using Xembed) which provides tabs.
+  This script is included with uzbl, in the examples directory.
+  (started by Tom Adams and currently led by Mason Larobina)
+- <a href="http://gitorious.org/pyweb">pyweb</a>: A browser ('framework') in python, inspired by uzbl.
+  The main point here is complete integration with python, and hence compromiseless flexibility (if you like python)
+  (led by Tom Adams)
+- <a href="http://surf.suckless.org/">surf</a>: I think I can best describe it as: 'Surf is to Uzbl what dwm is to wmii.' 
+  Their codebase is smaller, but if you want to customize/integrate you'll need to hack some C. (suckless.org)
+- <a href="https://addons.mozilla.org/en-US/firefox/addon/13537">ffuzbl</a>:
+  A firefox add-on which brings the look and feel of uzbl to firefox. (but doesn't use uzbl itself) (Azer Koculu)
+- <a href="http://www.haxney.org/2009/08/its-alive.html">Ezbl</a>: Probably the youngest of them all;
+  this project aims to provide a browser in emacs by embedding uzbl using Xembed. (Daniel Hackney)
+
+I also would like to port uzbl to / package uzbl for the <a href="http://maemo.nokia.com/n900/">n900</a>. 
+I have a project page (<a href="https://garage.maemo.org/projects/uzbl-mobile/">uzbl mobile</a>) but didn't
+find the time to work on it yet.
+
+Dieter
+
+PS: We're currently hacking and refactoring 'events' in uzbl.
+It will be much easier to handle all kinds of events (better then the current handlers) and also we'll be able to improve the keybind system a lot.
+(See <a href="http://lists.uzbl.org/pipermail/uzbl-dev-uzbl.org/2009-September/000321.html">mailing list post</a> for details)
