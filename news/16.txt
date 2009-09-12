@@ -1,0 +1,29 @@
+2009.09.12: many refactorings, fixes and improvements
+
+2009-09-12
+
+- uzbl: deprecate the history_handler variable.  The script stays, but you can bind to load_finish_handler. (Tom Adams)
+- uzbl: more sensible (better performing) max_conns and max_conns_host (me)
+- uzbl: don't hardcode keycmd clearing on load_start & make it optional (Tom Adams)
+- uzbl: always_insert_mode fix (James S Wheaton)
+- cookie_daemon.py: domain whitelisting (Michael Fiano)
+- cookie_daemon.py: initscript-like {start|stop|restart|reload} commands (Mason Larobina)
+- cookie_daemon.py: prevent duplicate daemons (Mason Larobina)
+- uzbl_tabbed: multiline tablist (Jake Probst)
+- uzbl_tabbed: bring_to_front (Devon Jones)
+- Makefile: /usr/local prefix by default (Tom Adams)
+- configs: don't put things like hostname in default user-agent (me)
+- various code cleanups and improvements
+- deprecate uzblctrl in favor of the more generic <a href="http://freshmeat.net/projects/socat/">socat</a> tool. (Tom Adams)
+
+
+- <a href="http://github.com/Dieterbe/uzbl/tree/2009.09.12">2009.09.12 tree</a>
+- <a href="http://github.com/Dieterbe/uzbl/tarball/2009.09.12">2009.09.12 tgz</a>
+
+In the meanwhile, the event-messages branch has been moved into experimental.
+The diff is huge, it's still a work in progress but everyone clearly agrees that this is "the future".  
+It will bring many improvements, such as binding of special keys, a good implementation of Modkeys
+and finegrained event handling in whichever (scripting) language you want.
+See <a href="http://lists.uzbl.org/pipermail/uzbl-dev-uzbl.org/2009-September/000321.html">this mailing list thread</a> for more details.
+
+Dieter
