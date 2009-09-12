@@ -2,9 +2,16 @@
 
 require_once 'functions.inc';
 
-$newsarray = array_reverse (getnews (1));
-$news = "";
+$feedtitle = 'Uzbl News';
 
+echo ("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
+echo ("<feed xmlns=\"http://www.w3.org/2005/Atom\">\n\n");
+echo ("<title>{$feedtitle}</title>\n");
+echo ("<link href=\"http://www.uzbl.org/atom.xml\" rel=\"self\"/>\n");
+echo ("<link href=\"http://www.uzbl.org/\"/>\n");
+
+$news = "";
+$newsarray = array_reverse (getnews (1));
 foreach ($newsarray as $item) {
     $news .= "
     <entry>
@@ -15,16 +22,7 @@ foreach ($newsarray as $item) {
     </entry>";
 }
 
-$feedtitle = 'Uzbl News';
-
-echo "<", "?xml version=\"1.0\" encoding=\"utf-8\"?", ">
-<feed xmlns=\"http://www.w3.org/2005/Atom\">
- 
-   <title>{$feedtitle}</title>
-   <link href=\"http://www.uzbl.org/atom.xml\" rel=\"self\"/>
-   <link href=\"http://www.uzbl.org/\"/>
-{$news}
-
-</feed>";
+echo ($news. "\n");
+echo ("</feed>");
 
 ?>
