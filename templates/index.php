@@ -16,26 +16,16 @@
   <div id="branches">
     <h2>Branches</h2>
     <ul>
-      <li>Dieterbe
+      <li>Official
         <ol>
           <li><a href="http://github.com/Dieterbe/uzbl/tree/master">master</a></li>
           <li><a href="http://github.com/Dieterbe/uzbl/tree/experimental">experimental</a></li>
       </ol></li>
-      <li>Anydot
+      <li>Community
         <ol>
-          <li><a href="http://github.com/anydot/uzbl/tree/experimental">experimental</a></li>
-      </ol></li>
-      <li>Barrucadu
-        <ol>
-          <li><a href="http://github.com/Barrucadu/uzbl/tree/experimental">experimental</a></li>
-      </ol></li>
-      <li>Dusanx
-        <ol>
-          <li><a href="http://github.com/dusanx/uzbl/tree/master">master</a></li>
-      </ol></li>
-      <li>Rob M
-        <ol>
-          <li><a href="http://github.com/robm/uzbl/tree/experimental">experimental</a></li>
+          <li><a href="http://github.com/Dieterbe/uzbl/network">many repos @ github</a></li>
+          <li><a href="http://www.google.be/search?&q=google+uzbl+git+-github">some repos not @ github</a></li>
+          <li><a href="http://github.com/search?q=uzbl">github search</a>
       </ol></li>
     </ul>
   </div>
