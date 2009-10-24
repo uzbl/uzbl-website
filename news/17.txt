@@ -1,0 +1,17 @@
+Segfaults with WebkitGtk 1.1.15.3
+
+2009-10-24
+
+Are you getting segfaults since you upgraded your libwebkit?
+Try downgrading it to 1.1.15.2 or earlier.
+The WebkitGtk guys told me they will do a bugfix release, but we impatient Arch users
+can check:
+
+- /var/cache/pacman/pkg/libwebkit-1.1.1*
+- the (unofficial) <a href="http://arm.kh.nu/">Arch Rollback Machine</a>
+
+Btw: we're also preparing a new Uzbl release, based on the huge improvements
+Rob and Mason have been doing (much better command interface/key handling/events/refactorings/..)
+If you want to get a sneak preview, try out the <a href="http://github.com/Dieterbe/uzbl/tree/experimental">experimental</a> tree.
+
+Dieter
