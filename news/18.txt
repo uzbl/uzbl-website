@@ -1,0 +1,19 @@
+2009.10.: A huge makeover.  The second phase in the life of uzbl
+
+2009-10-
+
+For the last two months, Rob and Mason have been doing truly awesome work
+giving uzbl a makeover and today, all those changes should be ready for
+wider consumption.
+
+Hilights:
+- splitup and better separation of concerns: uzbl-core, uzbl-browser and uzbl-tabbed
+  (see the updated introduction section on the website for more information)
+- EM instead of handlers : very finegrained, language agnostic
+much better keybinds (special keys, everything configurable, better Modkeys
+many improvements in other areas
+- ...
+
+- <a href="http://github.com/Dieterbe/uzbl/tree/2009.10.">2009.10. tree</a>
+- <a href="http://github.com/Dieterbe/uzbl/tarball/2009.10.">2009.10. tgz</a>
+
