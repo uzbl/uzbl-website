@@ -7,12 +7,21 @@ giving uzbl a makeover and today, all those changes should be ready for
 wider consumption.
 
 Hilights:
-- splitup and better separation of concerns: uzbl-core, uzbl-browser and uzbl-tabbed
-  (see the updated introduction section on the website for more information)
+- splitup and better separation of concerns: uzbl-core, uzbl-browser and uzbl-tabbed.
+  Basically, uzbl-core is the old uzbl, minus the built-in event handling,
+  and minus the keyboard interface.
+  Uzbl-browser is a complete, "working out of the box" browser
+  implementation based on uzbl-core and many of the scripts we already a
+  knew.  but also some more things.. (read on)
+  Uzbl-tabbed is the old uzbl-tabbed, but refactored to work with the new
+  uzbl-browser.
+  For more information, refer to the readme.
+  
 - EM instead of handlers : very finegrained, language agnostic
 much better keybinds (special keys, everything configurable, better Modkeys
 many improvements in other areas
 - ...
+- the website and docs have also had an overhaul to reflect these changes
 
 - <a href="http://github.com/Dieterbe/uzbl/tree/2009.10.">2009.10. tree</a>
 - <a href="http://github.com/Dieterbe/uzbl/tarball/2009.10.">2009.10. tgz</a>

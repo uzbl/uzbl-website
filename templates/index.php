@@ -33,7 +33,7 @@
 
 <div id="left">
   <div id="about">
-    <h2>The uzbl web tools</h2>
+    <h2>The uzbl web interface tools</h2>
     <p>Uzbl follows the UNIX philosophy - &quot;Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.&quot;
     Uzbl comes in different flavors:</p>
     <ul>
@@ -44,15 +44,17 @@
           <li>You see a webkit view and (optionally) a statusbar which gets popuplated externally</li>
           <li>No built-in means for url changing, loading/saving of bookmarks, saving history, keybinds, downloads, ...</li>
           <li>Extra functionality: many sample scripts come with it, on <a href="http://www.uzbl.org/wiki/scripts">uzbl wiki</a> or write them yourself</li>
+          <li>Entire configuration/state can be changed at runtime</li>
           <li>Uzbl keeps it simple, and puts <strong>you</strong> in charge.</li>
       </li>
       <li>uzbl-browser: a complete browser experience based on uzbl-core
         <ul>
-          <li>Uses a set of scripts that will fit most people, so things work out of the box. (mostly python)  Yet plenty of room for customisation</li>
-          <li>Brings everything you expect: url changing, history, downloads, form filling, easy link navigation, cookies etc</li>
+          <li>Uses a set of scripts (mostly python) that will fit most people, so things work out of the box.  Yet plenty of room for customisation</li>
+          <li>Brings everything you expect: url changing, history, downloads, form filling, link navigation, cookies, event management etc</li>
           <li>Advanced, customizable keyboard interface with support for modes, modkeys, multichars, variables (keywords) etc. (eg you can tweak the interface to be vim-like, emacs-like or any-other-program-like)</li>
-          <li>focus on plaintext storage for your data and configs in simple, parseable formats and adherence to the xdg basedir spec</li>
-          <li>Visually, similar as uzbl-core except that the statusbar contains useful things.  One window per webpage</li>
+          <li>Adequate default configuration</li>
+          <li>Focus on plaintext storage for your data and configs in simple, parseable formats and adherence to the xdg basedir spec</li>
+          <li>Visually, similar to uzbl-core except that the statusbar contains useful things.  One window per webpage</li>
         </ul>
       </li>
       <li>uzbl-tabbed: wraps around uzbl-browser and multiplexes it

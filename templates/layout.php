@@ -7,7 +7,7 @@
 	<meta name="author" content="Michael Walker"/>
 	<meta name="robots" content="FOLLOW,INDEX"/>
    
-	<title>Uzbl - web tools which adhere to the unix philosophy.</title>
+	<title>Uzbl - web interface tools which adhere to the unix philosophy.</title>
 
 	<link rel="stylesheet" href="/style.css" type="text/css" />
     <link rel="alternate" type="application/atom+xml" title="Uzbl News" href="/atom.xml" />
@@ -19,7 +19,7 @@
     <div id="page">
       <div id="header">
         <img src="img/uzbl-logo.png" alt="Uzbl"/>
-        <p>Uzbl - web tools which adhere to the unix philosophy.</p>
+        <p>Uzbl - web interface tools which adhere to the unix philosophy.</p>
       </div>
       
 <?php echo $CONTENT_FOR_LAYOUT ?>
