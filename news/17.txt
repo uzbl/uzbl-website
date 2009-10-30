@@ -14,4 +14,6 @@ Btw: we're also preparing a new Uzbl release, based on the huge improvements
 Rob and Mason have been doing (much better command interface/key handling/events/refactorings/..)
 If you want to get a sneak preview, try out the <a href="http://github.com/Dieterbe/uzbl/tree/experimental">experimental</a> tree.
 
+UPDATE: you can also use a new webkit version if you compile enchant with "--disable-zemberek"
+
 Dieter
