@@ -1,28 +1,65 @@
-2009.10.: A huge makeover.  The second phase in the life of uzbl
+2009.11.07: A huge makeover.  The second phase in the life of uzbl
 
-2009-10-
+2009-11-07
 
-For the last two months, Rob and Mason have been doing truly awesome work
-giving uzbl a makeover and today, all those changes should be ready for
+For the last two months, Rob Manea and Mason Larobina have been doing truly awesome work
+giving uzbl a much needed makeover and today, all those changes should be ready for
 wider consumption.
+Various patches were also contributed by Barak P, Brendan T, David K, Maximilian
+G, Olivier S and yours truly. (<a
+href="http://github.com/Dieterbe/uzbl/blob/2009.11.07/AUTHORS">authors
+file</a>)
+
 
 Hilights:
 - splitup and better separation of concerns: uzbl-core, uzbl-browser and uzbl-tabbed.
   Basically, uzbl-core is the old uzbl, minus the built-in event handling,
-  and minus the keyboard interface.
+  and minus the keyboard interface. (statusbar is still the same though)
   Uzbl-browser is a complete, "working out of the box" browser
-  implementation based on uzbl-core and many of the scripts we already a
-  knew.  but also some more things.. (read on)
+  implementation based on uzbl-core and many of the scripts we already 
+  knew.  It handles a lot of the events from uzbl-core, it also handles
+  keyboard input, it updates the statusbar when appropriate, and also some more things.. (read on)
   Uzbl-tabbed is the old uzbl-tabbed, but refactored to work with the new
-  uzbl-browser.
+  uzbl-browser. (note: this is not done yet.  uzbl-tabbed is broken in this
+  release, you'll have to wait a bit or try out <a
+  href="http://www.uzbl.org/wiki/uzbltab?s[]=tab">jake's C++ tab
+  manager</a>)
   For more information, refer to the readme.
-  
-- EM instead of handlers : very finegrained, language agnostic
-much better keybinds (special keys, everything configurable, better Modkeys
-many improvements in other areas
-- ...
+
+- EM instead of handlers : very finegrained, language agnostic way to handle
+  events: anytime anything happens, uzbl-core emits a message on stdout
+  and/or over a socketfile, so you can handle everything (or not) however
+  you want.  The only remaining handlers right now are cookie, download and
+  scheme.  On the long term we want to shift all of those to the events
+  system, but then we'd need synchronous events..
+
+- Much better keybinds (support for special keys, everything is configurable, better
+  Modkeys, more generic/flexible modes).  Your old binding strings should be backwards
+  compatible, but the way binds are defined is now different.
+
+- ability to add entries to the various context menus
+
+- print support
+
+- and much more.
+
 - the website and docs have also had an overhaul to reflect these changes
 
-- <a href="http://github.com/Dieterbe/uzbl/tree/2009.10.">2009.10. tree</a>
-- <a href="http://github.com/Dieterbe/uzbl/tarball/2009.10.">2009.10. tgz</a>
+- <a href="http://github.com/Dieterbe/uzbl/tree/2009.11.07">2009.11.07 tree</a>
+- <a href="http://github.com/Dieterbe/uzbl/tarball/2009.11.07">2009.11.07 tgz</a>
 
+
+I highly recommend you study the new sample config carefully.  A lot of
+things have changed, and a lot of things are now possible which weren't
+before.  Many of these things are now demonstrated in the sample config. 
+
+Also, if you were using many of the example scripts from the old uzbl, you
+probably now just want 'uzbl-browser'.  It comes with all the scripts by
+default, so you can remove them all in your XDG* dirs (unless you want to
+override them).
+
+PS: If you run uzbl on the commandline, you'l see a lot of 'Gtk-WARNING **: Ran out of
+links' messages.  We haven't figured out yet what these are but they seem
+harmless.
+
+Dieter
