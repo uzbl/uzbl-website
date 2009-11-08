@@ -46,6 +46,7 @@
           <li>Extra functionality: many sample scripts come with it, on <a href="http://www.uzbl.org/wiki/scripts">uzbl wiki</a> or write them yourself</li>
           <li>Entire configuration/state can be changed at runtime</li>
           <li>Uzbl keeps it simple, and puts <strong>you</strong> in charge.</li>
+        </ul>
       </li>
       <li>uzbl-browser: a complete browser experience based on uzbl-core
         <ul>
