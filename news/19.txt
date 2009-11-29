@@ -1,0 +1,52 @@
+2009.11.29: Completion plugin, mouse events, better scrolling and more.
+
+2009-11-29
+
+Changes:
+<ul>
+<li>Keycmd completion plugin (see below) (Mason)</li>
+<li>Mousebutton events (not yet combinable with modkeys) (Rob)</li>
+<li>Improved scroll command (Nicolas Pouillard)</li>
+<li>Security fixes in download.sh and scheme.py (Andy Spencer)</li>
+<li>search_clear command to clear search string (Rob)</li>
+<li>Give all executables in $PATH 'uzbl-' prefix (Dieter)</li>
+<li>Socket I/O fixes (Rob)</li>
+<li>better utf-8 handling with KEY_PRESS/RELEASE (Rob)</li>
+<li>Point to correct prefix in default config (Dieter)</li>
+<li>New events: PLUG_CREATED, COMMAND_ERROR, BUILTINS (Rob)</li>
+<li>Removal of deprecated yank, clipboard, cookies.py scripts (Dieter)</li>
+<li>Stacked bindings work from the insert mode now. (Mason)</li>
+<li>MODKEY_ADDITION request to group multiple modkeys as one (Mason)</li>
+<li>IGNORE_KEY request to customize which keys to ignore. This also allows non-english users
+to ignore function keys they need to press to access
+special characters without those keys registering as a modkey action.
+(Mason)</li>
+<li>Many various fixes and improvements in code and documentation. big TODO cleanup</li>
+</ul>
+
+Keycmd completion plugin:
+This plugin for the event manager (used in uzbl-browser) completes:
+<ul>
+<li>variablenames (with '@' prefix)</li>
+<li>commands</li>
+<li>variablenames in the set command (without '@' prefix)</li>
+</ul>
+The completion plugin aims to behave as similar to bash completion as possible.  
+When you press 'Tab':
+<ul>
+<li>If there is only one possible completion, it will complete right away</li>
+<li>Otherwise, the keycmd will expand to complete as much as possible and will show you all options
+when you press 'Tab' again</li>
+<li>If the keyword is in the completion list and you press 'Tab' again a space will be injected
+into the keycmd, in the case of set completion a ' = ' will be injected instead.</li>
+</ul>
+
+<a href="/wiki/_detail/completionplugin.png?id=shots">
+<img src='/wiki/_media/completionplugin.png?w=320' /></a>
+
+<ul>
+<li><a href="http://github.com/Dieterbe/uzbl/tree/2009.11.29">2009.11.29 tree</a></li>
+<li><a href="http://github.com/Dieterbe/uzbl/tarball/2009.11.29">2009.11.29 tgz</a></li>
+</ul>
+
+Dieter
