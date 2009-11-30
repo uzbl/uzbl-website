@@ -1,0 +1,30 @@
+2009.11.30: Bugfixes and two cool new scripts
+
+2009-11-30
+
+Apparently the argument expansion of the `script` command was kinda
+broken for a while, which caused - among others - the linkfollower scripts to
+stop working, this release brings a fix and more cool stuff.
+Changes:
+<ul>
+<li>Scroll-percentage display script (like emacs and vim)</li>
+<li>Script to edit textareas and other editables in external editor</li>
+<li>Clean up sockets/fifos on SIGSEGV and other relevant signals (should fix most "fifo already exists" problems)</li>
+<li>Fix malfunctioning parameter expansion when executing javascripts</li>
+<li>Don't hardcode WM class</li>
+</ul>
+Thanks to Aldrik Dunbar (aka 'N3ON') for the scroll-percentage script and Rob and Mason
+for their good work as usual.
+
+Two more notes:
+<ul>
+<li>The 'Ran out of links' warnings are caused by a <a href="https://bugzilla.gnome.org/show_bug.cgi?id=603302">regression in GTK</a>.  This is now fixed upstream</li>
+<li>The linkfollower scripts need a big makeover.  See <a href="http://lists.uzbl.org/pipermail/uzbl-dev-uzbl.org/2009-November/000473.html">this thread</a> for more info.</li>
+</ul>
+
+<ul>
+<li><a href="http://github.com/Dieterbe/uzbl/tree/2009.11.30">2009.11.30 tree</a></li>
+<li><a href="http://github.com/Dieterbe/uzbl/tarball/2009.11.30">2009.11.30 tgz</a></li>
+</ul>
+
+Dieter
