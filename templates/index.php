@@ -51,7 +51,7 @@
       <li>uzbl-browser: a complete browser experience based on uzbl-core
         <ul>
           <li>Uses a set of scripts (mostly python) that will fit most people, so things work out of the box.  Yet plenty of room for customisation</li>
-          <li>Brings everything you expect: url changing, history, downloads, form filling, link navigation, cookies, event management etc</li>
+          <li>Brings everything you expect: url changing, history, downloads, form filling, link navigation, cookies, event management etc.  However: one page per instance</li>
           <li>Advanced, customizable keyboard interface with support for modes, modkeys, multichars, variables (keywords) etc. (eg you can tweak the interface to be vim-like, emacs-like or any-other-program-like)</li>
           <li>Adequate default configuration</li>
           <li>Focus on plaintext storage for your data and configs in simple, parseable formats and adherence to the xdg basedir spec</li>
