@@ -14,7 +14,7 @@ $URLS = array ('/'                => 'Index',
                '/contribute.php/' => 'Contribute',
                '/commits.php/'    => 'Commits',
                '/news.php/'       => 'News',
-               '/doesitwork/'     => 'doesitwork');
+               '/doesitwork/.*'   => 'doesitwork');
 
 $phatso = new Phatso();
 $phatso->run ($URLS);
