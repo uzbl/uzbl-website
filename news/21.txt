@@ -1,0 +1,26 @@
+2009.12.22: Mode-specific keybinds and stuff
+
+2009-12-22
+- mode-specific keybinds
+- executing commands through shell or directly
+- loading javascript from file
+- better sandbox in build environment
+- COMMIT variable setting when building from tarball.  For all nice packagers out there.
+- geometry=maximized support
+- reset keycmd correctly in linkfollow scripts
+- create socket before daemonizing python daemons
+- various fixes and patches
+- and more...
+
+See readme for details.
+
+Thanks to Ciprian Dorin Craciun, Jason Woofenden, 'Vithon' and the usual suspects.
+
+<ul>
+<li><a href="http://github.com/Dieterbe/uzbl/tree/2009.12.22">2009.12.22 tree</a></li>
+<li><a href="http://github.com/Dieterbe/uzbl/tarball/2009.12.22">2009.12.22 tgz</a></li>
+</ul>
+
+Dieter
+
+
