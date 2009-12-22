@@ -1,6 +1,7 @@
 2009.12.22: Mode-specific keybinds and stuff
 
 2009-12-22
+
 - mode-specific keybinds
 - executing commands through shell or directly
 - loading javascript from file
