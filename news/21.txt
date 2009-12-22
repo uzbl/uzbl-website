@@ -12,7 +12,8 @@
 - various fixes and patches
 - and more...
 
-See readme for details.
+See readme and new (sample)config for details.
+(this stuff is backwards compatible. your old config will still work)
 
 Thanks to Ciprian Dorin Craciun, Jason Woofenden, 'Vithon' and the usual suspects.
 
