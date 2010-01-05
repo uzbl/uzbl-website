@@ -25,6 +25,8 @@ This will break local javascripts who rely on it, such as:
 - extedit.js (used for editing html textareas with external editor)
 - js code in config to focus input area on pageload and change mode depending on focus.
 
+All my git branches also have this temporary fix applied
+
 <ul>
 <li><a href="http://github.com/Dieterbe/uzbl/tree/2010.01.05">2010.01.05 tree</a></li>
 <li><a href="http://github.com/Dieterbe/uzbl/tarball/2010.01.05">2010.01.05 tgz</a></li>
