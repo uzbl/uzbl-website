@@ -1,0 +1,35 @@
+2010.01.05: Nasty security bug
+
+2010-01-05
+
+Simon Lipp brought to our attention a nasty security bug.
+Apparently there are ways for javascripts from a website to reach our 'Uzbl'
+object an use its "run" function, by using DOM method overriding, stack
+inspection and maybe more.
+I'm far from an expert in the field so I suggest you check the <a href="http://lists.uzbl.org/pipermail/uzbl-dev-uzbl.org/2010-January/000586.html">thread</a>
+on the mailing list for more details.
+But basically, if site admins modify their JS they can use the 'Uzbl.run'
+feature to execute uzbl commands (such as shell commands).
+One of the many possible exploits is demonstrated <a href="http://users.edpnet.be/dieter/exploit.html">here</a>.
+It will show you the output of 'cat /etc/fstab'.
+
+So do not run any uzbl version that has the 'Uzbl.run' feature (was
+introduced at release 2009-07-03).
+
+We're currently finding out how to plug this hole decently without loosing
+features, but for now you should use this new release which is nothing more then 2009.11.22 with the
+Uzbl object disabled.
+This will break local javascripts who rely on it, such as:
+- link follower scripts
+- scroll-percentage.js (used for displaying the scroll percentage in statusbar)
+- extedit.js (used for editing html textareas with external editor)
+- js code in config to focus input area on pageload and change mode depending on focus.
+
+<ul>
+<li><a href="http://github.com/Dieterbe/uzbl/tree/2010.01.05">2010.01.05 tree</a></li>
+<li><a href="http://github.com/Dieterbe/uzbl/tarball/2010.01.05">2010.01.05 tgz</a></li>
+</ul>
+
+Dieter
+
+
