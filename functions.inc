@@ -49,6 +49,9 @@ getnews ($verbosity) { /* 1 = Display full body text
                 $body = substr ($body, 0, 200) . "...";
             }
             $body = nl2br (trim ($body));
+	    $body = str_replace(array('<ul><br />', '</ul>',    '</li><br />'),
+				array('</p><ul>',   '</ul><p>', '</li>'),
+				$body);
 
             $news[$id] = array ('id'    => $id,
                                 'title' => $title,

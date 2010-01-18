@@ -15,5 +15,4 @@ The uzbl project is now just over one month old.  To celebrate that we bring you
 As usual, don't have too high expectations.  We are not even alpha yet...
 We've seen again great interest and input from many people.  Thanks a lot guys and girls.
 
-<a href="/wiki/_detail/uzbl_webinspector.png?id=shots">
-<img src='/wiki/_media/uzbl_webinspector.png?w=320' /></a>
+<a href="/wiki/_detail/uzbl_webinspector.png?id=shots"><img src='/wiki/_media/uzbl_webinspector.png?w=320' alt="Screenshot" /></a>

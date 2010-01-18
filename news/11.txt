@@ -29,10 +29,8 @@ configurable).
 It's not for everyone, but I think some people will really like it.
 You'll find this updated version in the example scripts directory.
 
-<a href="/wiki/_detail/uzbl_tabbed2.png?id=uzbl_tabbed">
-<img src='/wiki/_media/uzbl_tabbed2.png?w=320' /></a>
-<a href="/wiki/_detail/uzbl-aerialmono-tab.png?id=shots">
-<img src='/wiki/_media/uzbl-aerialmono-tab.png?w=320' /></a>
+<a href="/wiki/_detail/uzbl_tabbed2.png?id=uzbl_tabbed"><img src='/wiki/_media/uzbl_tabbed2.png?w=320' alt="Screenshot" /></a>
+<a href="/wiki/_detail/uzbl-aerialmono-tab.png?id=shots"><img src='/wiki/_media/uzbl-aerialmono-tab.png?w=320' alt="Screenshot" /></a>
 
 
 More info: <a href="http://www.uzbl.org/wiki/uzbl_tabbed">Uzbl wiki: uzbl tabbed</a>

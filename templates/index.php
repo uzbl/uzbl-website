@@ -24,8 +24,8 @@
       <li>Community
         <ol>
           <li><a href="http://github.com/Dieterbe/uzbl/network">many repos @ github</a></li>
-          <li><a href="http://www.google.be/search?&q=google+uzbl+git+-github">some repos not @ github</a></li>
-          <li><a href="http://github.com/search?q=uzbl">github search</a>
+          <li><a href="http://www.google.com/search?q=google+uzbl+git+-github">some repos not @ github</a></li>
+          <li><a href="http://github.com/search?q=uzbl">github search</a></li>
       </ol></li>
     </ul>
   </div>

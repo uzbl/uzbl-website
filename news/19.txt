@@ -41,8 +41,7 @@ when you press 'Tab' again</li>
 into the keycmd, in the case of set completion a ' = ' will be injected instead.</li>
 </ul>
 
-<a href="/wiki/_detail/completionplugin.png?id=shots">
-<img src='/wiki/_media/completionplugin.png?w=320' /></a>
+<a href="/wiki/_detail/completionplugin.png?id=shots"><img src='/wiki/_media/completionplugin.png?w=320' alt="Screenshot" /></a>
 
 <ul>
 <li><a href="http://github.com/Dieterbe/uzbl/tree/2009.11.29">2009.11.29 tree</a></li>
