@@ -1,0 +1,52 @@
+2010.02.02: Uzbl-tabbed and linkfollowing back from the dead
+
+2010-02-02
+
+A lot of patches have been piling up lately.  Looking back I'm suprised
+myself so much has changed again.
+
+First the awesome news:
+- Uzbl-tabbed is working again. Simon Lipp has done some great work
+  refactoring it so that it works again after the big 2009.11.07 overhaul.
+  It now uses uzbl events to control its behavior, which you can bind with
+  the keybinding system from uzbl-core.  Have a look at the added tabbed
+  bindings in the <a href="http://github.com/Dieterbe/uzbl/blob/2010.02.02/examples/config/config#L234">config file</a>.
+  Also various other improvements have been made to it by him and Mason.
+- We have a new link follower script (follow.js).  Not only brings this back
+  linkfollowing after it broke in 2010.01.05 (this one doesn't depend on the
+  Uzbl object), but you can actually configure which keys you want to use for
+  hinting.   Hence we dropped follow_Numbers.js and follow_Numbers_Strings.js.
+  Thanks Jason Woofenden and 'tczy'.
+
+Then the good news:
+- README cleanup (Daniel M. Hackney)
+- FAQ additions/updates (me)
+- config cleanup, added uzbl-tabbed bindings (Mason)
+- various fixes to various python scripts/plugins (Mason)
+- remove all references to Uzbl object and jsh in config.  Middleclick-bind
+  and yanking are working again, they are implemented in sh (Mason)
+- scrollbars_visible option (Simon Lipp)
+- some uriencode url fixes (Mason)
+- print_events (to stdout) option for uzbl-core (Simon Lipp)
+- argument expansion EM plugin (Mason)
+- cleaner buildprocess (don't force binary stripping, better sandbox, ... ) (Pawel, Mason, me)
+- directory reorganisation (me)
+- better javascript error handling (Simon Lipp)
+- strip leading whitespace from uri (Paweł Zuzelski)
+- various other thingies...
+
+The somewhat bad news:
+scroll-percentage.js, extedit.js, auto-insert-mode-on-field-focus and
+similar tricks are still broken.
+We're still figuring out how to bring back the Uzbl object (or something
+similar) in a secure way.
+We will probably use <a href="http://www.youtube.com/watch?v=laLudeUmXHM">Google's isolated worlds</a> but it's not yet ported to WebkitGtk+.
+
+<ul>
+<li><a href="http://github.com/Dieterbe/uzbl/tree/2010.02.02">2010.02.02 tree</a></li>
+<li><a href="http://github.com/Dieterbe/uzbl/tarball/2010.02.02">2010.02.02 tgz</a></li>
+</ul>
+
+Hope I didn't forget anything...
+
+Dieter
