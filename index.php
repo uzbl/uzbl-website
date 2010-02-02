@@ -22,7 +22,7 @@ $phatso->run ($URLS);
 function exec_doesitwork (&$app, $params) {
 	$navigation = navigation ();
 	$app->set ('navigation', $navigation);
-	$content = '<br><br><br><br><br><br><img src="img/uzbl-logo-xmas.png" alt="Uzbl"/><br><strong>Seems like it works</strong>';
+	$content = '<br><br><br><br><br><br><img src="img/uzbl-logo-fosdem.png" alt="Uzbl"/><br><strong>Seems like it works</strong>';
 	$app->set ('content', $content);
 	$app->render ('1col.php');
 }
