@@ -14,7 +14,8 @@ $URLS = array ('/'                => 'Index',
                '/contribute.php/' => 'Contribute',
                '/commits.php/'    => 'Commits',
                '/news.php/'       => 'News',
-               '/doesitwork/.*'   => 'doesitwork');
+               '/doesitwork/.*'   => 'doesitwork',
+               '/fosdem2010/.*'   => 'fosdem2010');
 
 $phatso = new Phatso();
 $phatso->run ($URLS);
@@ -127,6 +128,11 @@ function exec_News (&$app, $params) {
     $app->set ('content', $content);
 
     $app->render ('1col.php');
+}
+
+function exec_fosdem2010 (&$app, $params) {
+  $_GET['id'] = 25;
+  exec_News ($app, $params);
 }
 
 ?>
