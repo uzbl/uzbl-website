@@ -6,7 +6,7 @@
 <li>resource-request-starting event. An event for every resource requested (incl. images, stylesheets, etc) (Andrea Marchesini)</li>
 <li>mouse pointer events.  (No plugins yet to handle them)  (Igor Bogomazov)</li>
 <li>http basic authentication handler (Paweł Zuzelski)</li>
-<li>EM plugins now can (and have to) share entire objects (Mason Larobina)</li>
+<l1>Plugins can now share non-function objects through the export mechanism (Mason Larobina)</li>
 <li>New uzbl-tabbed events: NEW_BG_TAB, NEW_TAB_NEXT, NEW_BG_TAB_NEXT to
 support opening tab next to current and background tabs (Dmytro Milinevskyy)</li>
 <li>eval_js: print file where the error occured (Simon Lipp)</li>
