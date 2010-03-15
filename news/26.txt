@@ -1,6 +1,6 @@
 2010.03.14: mouse pointer events, http auth handler, uzbl-tabbed improvements, ...
 
-2010-03-04
+2010-03-14
 
 <ul>
 <li>resource-request-starting event. An event for every resource requested (incl. images, stylesheets, etc) (Andrea Marchesini)</li>
