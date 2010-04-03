@@ -1,0 +1,87 @@
+2010.04.03: Working gmails, better formfillers, less bads and more goods
+
+2010-04-03
+
+Scripts:
+<ul>
+<li>One new formfiller.sh to rule them all. Features: posix sh, multiple
+profiles per site (if needed), correctly talks to uzbl (doesn't do any http)</li>
+<li>download.sh: use content-disposition header (so you get more sensible
+filenames) and tell wget to use `$XDG_DATA_HOME/uzbl/cookies.txt`</li>
+<li>bookmark script: strip tags from pagetitles when saving new bookmarks to avoid bogus
+separations</li>
+<li>Removed inferior/duplicate/broken scripts: cookies.sh, follower.js, hint.js,
+ formfiller.pl, linkfollow.js, scroll-percentage.js, extedit.js.
+In the future we will probably use formfiller.sh or something as extedit.js and
+scroll-percentage can maybe be reimplemented without using Uzbl.run()</li>
+</ul>
+
+Uzbl-tabbed:
+<ul>
+<li>Gtk notebook tab reordering</li>
+<li>Handle SIGCHLD to correctly reap children</li>
+<li>Simpler (and working) plaintext session saving/loading. no more json</li>
+</ul>
+
+Uzbl-core
+<ul>
+<li>Support both http and (new) javascript cookies.  This should fix
+problems with gmail and probably other sites</li>
+<li>javascript_windows parameter to control whether JS can open new windows by itself</li>
+<li>replaced old new_window handler with NEW_WINDOW event.  You can use this
+event to open links (normal links or js links) in the same/new window, but also to open the link in a
+new tab in uzbl-tabbed. (see config)</li>
+<li>some fixes in cleanup()</li>
+<li>Allow period character in variable names (update your user agent, see config)</li>
+<li>Don't try to steal focus if in plug mode</li>
+<li>simplify uri command. now just wraps around `set uri`</li>
+<li>remove deprecated download_handler. we already use the DOWNLOAD_REQUEST event</li>
+</ul>
+
+Config:
+<ul>
+<li>you can use both tabs and spaces in the config now</li>
+<li>'&lt;Shift-Insert&gt;` binding to dump xclip contents into keycmd</li>
+<li>`&lt;Ctrl&gt;]` binding to escape</li>
+<li>Reload only reloads set commands. This avoids things such as adding
+entries to your menu twice when reloading (but does not restore binds
+anymore)</li>
+<li>fix `&lt;Home&gt;` bind</li>
+</ul>
+
+Makefile:
+<ul>
+<li>stopped duplicate compiling</li>
+<li>use DOCDIR</li>
+<li>set correct permissions on all installed files</li>
+</ul>
+
+Goodies:
+<ul>
+<li>Vim syntax file for uzbl config</li>
+</ul>
+
+Dropped dependencies:
+<ul>
+<li>perl</li>
+<li>python-json</li>
+</ul>
+
+From now on, we encourage users to write their scripts in either posix sh or
+in python, to minimize dependencies when the scripts end up in the main
+tree.
+
+Syntax hilighting in vim:
+<a href="/wiki/_detail/uzblvim.png?id=shots">
+<img src='/wiki/_media/uzblvim.png?w=320' /></a>
+
+<ul>
+<li><a href="http://github.com/Dieterbe/uzbl/tree/2010.04.03">2010.04.03 tree</a></li>
+<li><a href="http://github.com/Dieterbe/uzbl/tarball/2010.04.03">2010.04.03 tgz</a></li>
+</ul>
+
+This release is brought to you by Alex Alexander, Cedric Staub, Dmytro
+Milinevskyy, Jake Probst, James Campos, Pawel Tomak, Paweł Zuzelski, Israel
+Levin and of course Mason Larobina, Rob Manea and myself.
+
+Dieter
