@@ -14,7 +14,8 @@ $URLS = array ('/'                => 'Index',
                '/contribute.php/' => 'Contribute',
                '/commits.php/'    => 'Commits',
                '/news.php/'       => 'News',
-               '/doesitwork/.*'   => 'doesitwork');
+               '/doesitwork/.*'   => 'doesitwork',
+               '/fosdem2010/.*'   => 'fosdem2010');
 
 $phatso = new Phatso();
 $phatso->run ($URLS);
@@ -22,7 +23,7 @@ $phatso->run ($URLS);
 function exec_doesitwork (&$app, $params) {
 	$navigation = navigation ();
 	$app->set ('navigation', $navigation);
-	$content = '<br><br><br><br><br><br><img src="img/uzbl-logo-xmas.png" alt="Uzbl"/><br><strong>Seems like it works</strong>';
+	$content = '<br><br><br><br><br><br><img src="img/uzbl-logo.png" alt="Uzbl"/><br><strong>Seems like it works</strong>';
 	$app->set ('content', $content);
 	$app->render ('1col.php');
 }
@@ -127,6 +128,11 @@ function exec_News (&$app, $params) {
     $app->set ('content', $content);
 
     $app->render ('1col.php');
+}
+
+function exec_fosdem2010 (&$app, $params) {
+  $_GET['id'] = 25;
+  exec_News ($app, $params);
 }
 
 ?>

@@ -1,0 +1,23 @@
+Fosdem lightningtalk video
+
+2010-02-14
+
+Video of Uzbl lightningtalk @ the <a href="http://fosdem.org/2010/">Fosdem 2010</a> conference in Brussels on Feb. 6 2010.
+
+<a href="http://users.edpnet.be/dieter/uzbl/uzbl-fosdem2010.pdf">slides (pdf)</a>
+<a href="http://github.com/Dieterbe/uzbl-website/tree/master/doc/fosdem2010">slides source code (+latex themes)</a>
+<a href="http://video.fosdem.org/2010/lightningtalks/saturday/17-sat-uzbl.xvid.avi">17-sat-uzbl.xvid.avi</a> direct download
+<object width="853" height="505">
+<param name="movie" value="http://www.youtube.com/v/YgAWfqwzxck&hl=en_US&fs=1&"></param>
+<param name="allowFullScreen" value="true"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed src="http://www.youtube.com/v/YgAWfqwzxck&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="853" height="505"></embed>
+</object>
+
+If you liked it, also check out:
+<ul>
+<li><a href="http://www.cccs.de/wiki/pub/Main/VorTraege/uzbl-print.pdf">www.cccs.de/wiki/pub/Main/VorTraege/uzbl-print.pdf (why the web sucks and how uzbl is an attempt at fixing it)</a></li>
+<li><a href="http://lwn.net/Articles/341245/">lwn.net/Articles/341245/ (slightly outdated but good article)</a></li>
+</ul>
+
+See <a href="http://www.youtube.com/user/fosdemtalks">fosdemtalks</a> for more videos of different talks.

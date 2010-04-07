@@ -1,0 +1,11 @@
+Uzbl @ fosdem 2010
+
+2010-01-24
+
+I will be doing a lightningtalk about uzbl at the <a href="http://www.fosdem.org">fosdem</a>
+conference in Brussels on 6/7 february.
+<a href="http://fosdem.org/2010/schedule/events/uzbl">more info</a>.
+
+I hope to see you all there!
+
+Dieter

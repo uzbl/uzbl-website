@@ -1,0 +1,27 @@
+2010.03.14: mouse pointer events, http auth handler, uzbl-tabbed improvements, ...
+
+2010-03-04
+
+<ul>
+<li>resource-request-starting event. An event for every resource requested (incl. images, stylesheets, etc) (Andrea Marchesini)</li>
+<li>mouse pointer events.  (No plugins yet to handle them)  (Igor Bogomazov)</li>
+<li>http basic authentication handler (Paweł Zuzelski)</li>
+<l1>Plugins can now share non-function objects through the export mechanism (Mason Larobina)</li>
+<li>New uzbl-tabbed events: NEW_BG_TAB, NEW_TAB_NEXT, NEW_BG_TAB_NEXT to
+support opening tab next to current and background tabs (Dmytro Milinevskyy)</li>
+<li>eval_js: print file where the error occured (Simon Lipp)</li>
+<li>reset the keycmd on load start, not commit (fixes irritating keycmd reset when you were typing while a page was loading)</li>
+<li>urlencode '@' characters when getting in urls from external sources (i.e. xclip) to prevent variable expansion
+(Mason Larobina). this is not a permanent fix.  we should not alter the url,
+better escaping system will come some day.</li>
+<li>fix typo's in zoom binds (Israel Levin)</li>
+<li>uzbl-tabbed, cookie daemon and EM: don't flush stdout/stderr when not on tty (Israel Levin)</li>
+<li>check webkit version at runtime, not compiletime (Paweł Zuzelski)</li>
+<li>fixes in keybinding and related EM plugins (Mason)</li>
+<li>various (Paweł Zuzelski, Mason, Rob, Dmytro Milinevskyy, me)</li>
+</ul>
+
+<ul>
+<li><a href="http://github.com/Dieterbe/uzbl/tree/2010.03.04">2010.03.04 tree</a></li>
+<li><a href="http://github.com/Dieterbe/uzbl/tarball/2010.03.04">2010.03.04 tgz</a></li>
+</ul>
