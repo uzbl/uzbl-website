@@ -215,3 +215,15 @@ h3
 hr {
     color:#e4e4e4;
 }
+
+ul#newslinks
+{
+    margin:5px;
+    padding:0px;
+}
+
+ul#newslinks li
+{
+    display:inline;
+    padding:2px;
+}

@@ -96,43 +96,40 @@ news ($page) {
     $news = "";
 
     /* Pagintation */
-    $newsperpage = 20;
+    $newsperpage = 2;
     $gonext      = FALSE;
     $goback      = FALSE;
     $nextpage    = $page + 1;
     $lastpage    = $page - 1;
     
-    for ($i = ($page * $newsperpage) + $newsperpage; $i < $newscount; $i ++) {
-        unset ($newsarray[$i]);
-        $gonext = TRUE;
-    }
-    
-    if ($page > 0) {
-        for ($i = 0; $i < $page * $newsperpage and $i < $newscount; $i ++) {
-            unset ($newsarray[$i]);
-            $goback = TRUE;
-        }
-    }
-    
     /* News display */
+    $count = 0;
     foreach ($newsarray as $item) {
-        $news .= "<div class=\"newsitem\">
+	if ($count < ($page + 1) * $newsperpage and $count >= $page * $newsperpage) {
+	    $news .= "<div class=\"newsitem\">
                 <h3><a href=\"/news.php?id={$item['id']}\" title=\"{$item['title']}\">{$item['title']}</a></h3>
                 <span class=\"date\">{$item['date']}</span>
                 <p>{$item['body']}</p>
               </div>";
+	}
+	$count ++;
     }
+
+    $gonext = ($page < ceil(count($newsarray) / $newsperpage));
+    $goback = ($page != 0);
     
     $newslinks = "";
     if ($gonext or $goback) {
         $newslinks = '<ul id="newslinks">';
+
+        if ($goback) {
+            $newslinks .= "<li><a href=\"http://www.uzbl.org/index.php?page={$lastpage}\">&laquo; Previous</a></li>";
+        }
+
         if ($gonext) {
             $newslinks .= "<li><a href=\"http://www.uzbl.org/index.php?page={$nextpage}\">Next &raquo;</a></li>";
         }
         
-        if ($goback) {
-            $newslinks .= "<li><a href=\"http://www.uzbl.org/index.php?page={$lastpage}\">Previous &laquo;</a></li>";
-        }
         $newslinks .= '</ul>';
     }
 
