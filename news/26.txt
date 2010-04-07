@@ -1,6 +1,6 @@
 2010.03.14: mouse pointer events, http auth handler, uzbl-tabbed improvements, ...
 
-2010-03-04
+2010-03-14
 
 <ul>
 <li>resource-request-starting event. An event for every resource requested (incl. images, stylesheets, etc) (Andrea Marchesini)</li>
@@ -22,6 +22,6 @@ better escaping system will come some day.</li>
 </ul>
 
 <ul>
-<li><a href="http://github.com/Dieterbe/uzbl/tree/2010.03.04">2010.03.04 tree</a></li>
-<li><a href="http://github.com/Dieterbe/uzbl/tarball/2010.03.04">2010.03.04 tgz</a></li>
+<li><a href="http://github.com/Dieterbe/uzbl/tree/2010.03.14">2010.03.14 tree</a></li>
+<li><a href="http://github.com/Dieterbe/uzbl/tarball/2010.03.14">2010.03.14 tgz</a></li>
 </ul>
