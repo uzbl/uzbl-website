@@ -73,7 +73,7 @@ tree.
 
 Syntax hilighting in vim:
 <a href="/wiki/_detail/uzblvim.png?id=shots">
-<img src='/wiki/_media/uzblvim.png?w=320' /></a>
+<img src='/wiki/_media/uzblvim.png?w=320' alt="syntax highlighting"/></a>
 
 <ul>
 <li><a href="http://github.com/Dieterbe/uzbl/tree/2010.04.03">2010.04.03 tree</a></li>
