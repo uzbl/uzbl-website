@@ -55,7 +55,7 @@ function exec_Archives (&$app, $params) {
     /* News display */
     $count = 0;
     foreach ($newsarray as $item) {
-	$news .= "<div class=\"newsarchive\">
+	$news .= "<div class=\"news\">
                 <h3><a href=\"/news.php?id={$item['id']}\" title=\"{$item['title']}\">{$item['title']}</a></h3>
                 <span class=\"date\">{$item['date']}</span>
                 <p>{$item['body']}</p>
