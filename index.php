@@ -7,6 +7,7 @@ require_once 'phatso.inc';
 
 $URLS = array ('/'                => 'Index',
                '/index.php/'      => 'Index',
+               '/archives.php/'   => 'Archives',
                '/faq.php/'        => 'FAQ',
                '/readme.php/'     => 'Readme',
                '/get.php/'        => 'Get',
@@ -37,10 +38,31 @@ function exec_Index (&$app, $params) {
     $commits .= recentcommits ('master', 7, false);
     $app->set ('recentcommits', $commits);
     
-    $news = news ((! isset ($_GET['page']) || ! is_numeric ($_GET['page'])) ? 0 : intval ($_GET['page']));
+    $news = news ((! isset ($_GET['page']) || ! is_numeric ($_GET['page'])) ? 0 : intval ($_GET['page']), False, True);
     $app->set ('news', $news);
     
     $app->render ('index.php');
+}
+
+function exec_Archives (&$app, $params) {
+    $navigation = navigation ();
+    $app->set ('navigation', $navigation);
+
+    $newsarray = getnews (1);
+    krsort ($newsarray);
+    $news = "";
+
+    /* News display */
+    $count = 0;
+    foreach ($newsarray as $item) {
+	$news .= "<div class=\"newsarchive\">
+                <h3><a href=\"/news.php?id={$item['id']}\" title=\"{$item['title']}\">{$item['title']}</a></h3>
+                <span class=\"date\">{$item['date']}</span>
+              </div>";
+    }
+
+    $app->set ('content', $news);
+    $app->render ('1col.php');
 }
 
 function exec_FAQ (&$app, $params) {

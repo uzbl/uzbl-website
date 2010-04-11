@@ -227,3 +227,22 @@ ul#newslinks li
     display:inline;
     padding:2px;
 }
+
+div.newsarchive
+{
+    padding:3px 1px 3px 1px;
+}
+
+div.newsarchive h3
+{
+    font-size:13px;
+    font-weight:normal;
+    display:inline;
+    margin:0px;
+    padding:0px;
+}
+
+div.newsarchive span.date
+{
+    float:right;
+}

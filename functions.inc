@@ -90,12 +90,12 @@ recentcommits ($branch, $limit, $detailed) {
 
 
 function
-news ($page) {
+news ($page, $navlinks, $archivelink) {
     $newsarray = getnews (1);
     krsort ($newsarray);
     $news = "";
 
-    /* Pagintation */
+    /* Pagination */
     $newsperpage = 2;
     $gonext      = FALSE;
     $goback      = FALSE;
@@ -119,15 +119,19 @@ news ($page) {
     $goback = ($page != 0);
     
     $newslinks = "";
-    if ($gonext or $goback) {
+    if (($gonext or $goback) and ($navlinks or $archivelink)) {
         $newslinks = '<ul id="newslinks">';
 
-        if ($goback) {
+        if ($goback and $navlinks) {
             $newslinks .= "<li><a href=\"http://www.uzbl.org/index.php?page={$lastpage}\">&laquo; Previous</a></li>";
         }
 
-        if ($gonext) {
+        if ($gonext and $navlinks) {
             $newslinks .= "<li><a href=\"http://www.uzbl.org/index.php?page={$nextpage}\">Next &raquo;</a></li>";
+        }
+
+        if ($archivelink) {
+            $newslinks .= "<li><a href=\"http://www.uzbl.org/archives.php\">Archives</a></li>";
         }
         
         $newslinks .= '</ul>';
