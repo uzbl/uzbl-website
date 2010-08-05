@@ -1,0 +1,26 @@
+2010.08.05: Security fix and EM overhaul
+
+2010-08-05
+
+The 2010.08.05 release comes with a patched config file.
+With shell code in hyperlinks on a page, one of the sample (uzbl-core) resp. default (uzbl-browser) button bindings
+(binding for mousebutton2) would execute this code.
+This <a href="http://github.com/pawelz/uzbl/commit/342f292c27973c9df5f631a38bd12f14a9c5cdc2">commit</a> fixes that issue.
+Note that just upgrading your uzbl is not enough.  If you have an existing config, the change will not be automatically applied.
+So be sure you have this change in your config.
+Thanks Pawel Zuzelski and 'Chuzz' for spotting this.
+<a href="http://www.uzbl.org/bugs/index.php?do=details&task_id=240">ticket 240 has more info</a>
+
+This release also comes with improvements to the formfiller,
+ and <a href="http://github.com/mason-larobina/uzbl/commit/d3cbe16bf16ff63c0e3db15d645e958712bd02d8">a refactoring of the EM and EM plugins</a>.
+See the commit for details.  I believe the most interesting one is the introduction of hooks for EM plugins.
+
+There is a whole bunch of further pending contributions, but I'm a bit short on time lately.  Stay tuned.
+
+<ul>
+<li><a href="http://github.com/Dieterbe/uzbl/tree/2010.08.05">2010.08.05 tree</a></li>
+<li><a href="http://github.com/Dieterbe/uzbl/tarball/2010.08.05">2010.08.05 tgz</a></li>
+</ul>
+
+Dieter
+
