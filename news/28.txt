@@ -1,0 +1,21 @@
+Archcon Uzbl presentation
+
+2010-08-05
+
+<a href="http://www.archlinux.ca/archcon2010/">Archcon 2010</a> was an Arch Linux conference in Toronto, Canada last week.
+
+Next to my Arch duties I also gave a talk about Uzbl.  Basically I took the <a href="http://www.uzbl.org/fosdem2010">Uzbl lightningtalk at Fosdem</a>
+and:
+<ul>
+<li>took more time to go into some details</li>
+<li>added a section about other interestping browsers</li>
+<li>discussed the current limitations and roadmap</li>
+</ul>
+
+<a href="http://dieter.plaetinck.be/files/uzbl-archcon2010.pdf">slides (pdf)</a>
+<a href="http://archlinux.ca/archcon2010/videos/day2/">video</a>
+
+On the <a href="http://www.archlinux.ca/archcon2010/">Archcon</a> site you can find more info, pictures and videos.
+On my personal blog I did a <a href="http://dieter.plaetinck.be/back_from_canada_archcon">blogpost about Archcon and my trip to Canada</a>.
+
+Dieter
