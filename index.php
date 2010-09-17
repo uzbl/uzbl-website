@@ -21,7 +21,7 @@ $URLS = array ('/'                => 'Index',
 $phatso = new Phatso();
 $phatso->run ($URLS);
 
-function exec_doesitwork (&$app, $params) {
+function exec_doesitwork ($app, $params) {
 	$navigation = navigation ();
 	$app->set ('navigation', $navigation);
 	$content = '<br><br><br><br><br><br><img src="img/uzbl-logo.png" alt="Uzbl"/><br><strong>Seems like it works</strong>';
@@ -29,7 +29,7 @@ function exec_doesitwork (&$app, $params) {
 	$app->render ('1col.php');
 }
 
-function exec_Index (&$app, $params) {
+function exec_Index ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
@@ -44,7 +44,7 @@ function exec_Index (&$app, $params) {
     $app->render ('index.php');
 }
 
-function exec_Archives (&$app, $params) {
+function exec_Archives ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
 
@@ -66,7 +66,7 @@ function exec_Archives (&$app, $params) {
     $app->render ('1col.php');
 }
 
-function exec_FAQ (&$app, $params) {
+function exec_FAQ ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
@@ -76,7 +76,7 @@ function exec_FAQ (&$app, $params) {
     $app->render ('1col.php');
 }
 
-function exec_Readme (&$app, $params) {
+function exec_Readme ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
@@ -86,7 +86,7 @@ function exec_Readme (&$app, $params) {
     $app->render ('1col.php');
 }
 
-function exec_Get (&$app, $params) {
+function exec_Get ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
@@ -96,7 +96,7 @@ function exec_Get (&$app, $params) {
     $app->render ('1col.php');
 }
 
-function exec_Community (&$app, $params) {
+function exec_Community ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
@@ -106,7 +106,7 @@ function exec_Community (&$app, $params) {
     $app->render ('1col.php');
 }
 
-function exec_Contribute (&$app, $params) {
+function exec_Contribute ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
@@ -116,7 +116,7 @@ function exec_Contribute (&$app, $params) {
     $app->render ('1col.php');
 }
 
-function exec_Commits (&$app, $params) {
+function exec_Commits ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
 
@@ -131,7 +131,7 @@ function exec_Commits (&$app, $params) {
     $app->render ('1col.php');
 }
 
-function exec_News (&$app, $params) {
+function exec_News ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
@@ -153,7 +153,7 @@ function exec_News (&$app, $params) {
     $app->render ('1col.php');
 }
 
-function exec_fosdem2010 (&$app, $params) {
+function exec_fosdem2010 ($app, $params) {
   $_GET['id'] = 25;
   exec_News ($app, $params);
 }
