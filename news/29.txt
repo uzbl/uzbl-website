@@ -14,6 +14,7 @@ Thanks Pawel Zuzelski and 'Chuzz' for spotting this.
 This release also comes with improvements to the formfiller,
  and <a href="http://github.com/mason-larobina/uzbl/commit/d3cbe16bf16ff63c0e3db15d645e958712bd02d8">a refactoring of the EM and EM plugins</a>.
 See the commit for details.  I believe the most interesting one is the introduction of hooks for EM plugins.
+Due to this refactoring, some stuff in the config has changed.  You will need to merge these changes from the default/sample config into yours.
 
 There is a whole bunch of further pending contributions, but I'm a bit short on time lately.  Stay tuned.
 
