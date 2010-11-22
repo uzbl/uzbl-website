@@ -1,0 +1,39 @@
+New maintainer
+
+2010-11-21
+
+Hi,
+as of today Brendan Taylor (aka 'bct') will be the new uzbl maintainer / project leader.
+
+Uzbl started about a year and a half ago as an experiment, an attempt to make web browsing more bearable for hackers.
+We didn't always make the right choices, but at the very least it has been an interesting journey.
+I think we've done innovative things.  Uzbl (and browsers in general) still have a way to go, but at least the browsing experience is now tolerable.
+Partly because of our work on uzbl, partly because of some other cool browser projects that have appeared since.
+
+Personally I've lost of interest in devoting much of my spare time on Uzbl. 
+I have other projects going on (open source stuff, and real life projects), and
+I want to be more a user, less a coder.
+
+There are various foss projects where progress goes slowly - releases taking easily a year or more - but that's not how I want it to be for Uzbl.
+Uzbl has clearly an active user/contributor base and it's sad to see to the pile of pending patches / pull requests just getting bigger and bigger.
+In the spirit of "release early, release often" I think the project also needs somebody who can at least keep up with, and preferrably, drive the progress.
+There's still so much innovation which can be done, and now I feel I'm holding it back.
+
+Brendan has been a long time contributor, he seems to know what he's doing, and he has some things he wants to tackle,
+so I'll think he's the right person for the job.
+He'll share his plans with you guys shortly.
+
+Practically, to keep things simple, the repositories stay the same.
+That is:
+<ul>
+<li><a href="http://github.com/Dieterbe/uzbl">http://github.com/Dieterbe/uzbl</a></li>
+<li><a href="http://github.com/Dieterbe/uzbl-website">http://github.com/Dieterbe/uzbl-website</a></li>
+</ul>
+Brendan will be the guy deciding what goes in and what doesn't.
+He'll be the one deciding over your pull requests and patches (but again: community feedback is always welcome!)
+He'll also be the one defining the direction of the project, and he's in charge of the website/wiki/bugtracker/...
+(although we of course all pitch in where we can, right ;-)
+
+So, welcome Brendan!
+
+Dieter
