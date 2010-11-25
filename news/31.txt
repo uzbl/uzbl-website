@@ -14,14 +14,11 @@ improving. In the last 3 months we have:
   <li>added <code>SCROLL_VERT</code> and <code>SCROLL_HORIZ</code> events, which
       allow us to display the scroll percentage in the status bar again
   <li>added the <code>show_inspector</code> command to show the Web Inspector
-  <li>added the <code>enable_pagecache</code> variable to enable the <a
-      href="http://webkit.org/blog/427/webkit-page-cache-i-the-basics/">Webkit
-      Page Cache</a>
+  <li>added the <code>enable_pagecache</code> variable to enable the <a href="http://webkit.org/blog/427/webkit-page-cache-i-the-basics/">Webkit Page Cache</a>
   <li>added some new default keybindings
   <li>refactored the default shell scripts to share code
   <li>and fixed and tidied lots of other little things
 </ul>
-
 Thanks to Ben Boeckel, Michael Raskin, Daiki Ueno, Lars-Dominik Braun and
 Paweł Zuzelski for these patches, and for keeping development active! (Thanks
 also to those whose patches still need to be merged, I'll be getting to those
