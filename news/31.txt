@@ -1,0 +1,34 @@
+2010.11.25: Beware, I Live! (Now faster, more stable and more capable)
+
+2010-11-25
+
+Hey folks! Things have been quiet here for a while, but uzbl is still steadily
+improving. In the last 3 months we have:
+
+<ul>
+  <li>fixed a bug that caused uzbl-tabbed to hog CPU time after closing a tab
+  <li>introduced a C cookie daemon that uses a much faster algorithm than
+      uzbl-cookie-daemon
+  <li>fixed a crash when opening an image in a new window
+  <li>fixed several memory leaks
+  <li>added <code>SCROLL_VERT</code> and <code>SCROLL_HORIZ</code> events, which
+      allow us to display the scroll percentage in the status bar again
+  <li>added the <code>show_inspector</code> command to show the Web Inspector
+  <li>added the <code>enable_pagecache</code> variable to enable the <a
+      href="http://webkit.org/blog/427/webkit-page-cache-i-the-basics/">Webkit
+      Page Cache</a>
+  <li>added some new default keybindings
+  <li>refactored the default shell scripts to share code
+  <li>and fixed and tidied lots of other little things
+</ul>
+
+Thanks to Ben Boeckel, Michael Raskin, Daiki Ueno, Lars-Dominik Braun and
+Paweł Zuzelski for these patches, and for keeping development active! (Thanks
+also to those whose patches still need to be merged, I'll be getting to those
+too.)
+
+There's still a lot that all of us can do to help make uzbl better, and a lot of
+cool things that uzbl can do for us. I'm looking forward to seeing what people
+come up with!
+
+Brendan
