@@ -28,4 +28,9 @@ There's still a lot that all of us can do to help make uzbl better, and a lot of
 cool things that uzbl can do for us. I'm looking forward to seeing what people
 come up with!
 
+<ul>
+  <li><a href="https://github.com/Dieterbe/uzbl/tree/2010.11.25">2010.11.25 tree</a>
+  <li><a href="https://github.com/Dieterbe/uzbl/tarball/2010.11.25">2010.11.25 tgz</a>
+</ul>
+
 Brendan
