@@ -6,6 +6,7 @@ A lot of patches have been piling up lately.  Looking back I'm suprised
 myself so much has changed again.
 
 First the awesome news:
+
 - Uzbl-tabbed is working again. Simon Lipp has done some great work
   refactoring it so that it works again after the big 2009.11.07 overhaul.
   It now uses uzbl events to control its behavior, which you can bind with
@@ -15,10 +16,11 @@ First the awesome news:
 - We have a new link follower script (follow.js).  Not only brings this back
   linkfollowing after it broke in 2010.01.05 (this one doesn't depend on the
   Uzbl object), but you can actually configure which keys you want to use for
-  hinting.   Hence we dropped follow_Numbers.js and follow_Numbers_Strings.js.
+  hinting. Hence we dropped follow\_Numbers.js and follow\_Numbers\_Strings.js.
   Thanks Jason Woofenden and 'tczy'.
 
 Then the good news:
+
 - README cleanup (Daniel M. Hackney)
 - FAQ additions/updates (me)
 - config cleanup, added uzbl-tabbed bindings (Mason)

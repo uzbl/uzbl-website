@@ -5,12 +5,15 @@
 Depending on who you ask, you'll get various opinions on the state and
 usability of uzbl.  Some people are already using it full-time, others are
 waiting for (or hacking on) one or two specific features they really want.
+
 For me personally, what I still consider must-haves that are not finished
 yet:
+
 - better (faster) way of doing cookies, using one process instead of forking expensive python scripts all the time. (this is being worked on)
 - a good instance management script that considers tag/name/page state etc.
 
 Others seem to want:
+
 - DOM access from C ~ better link following. (this is being worked on)
 - greasemonkey and fancier JS extensions. (this is being worked on)
 - a slightly more versatile configuration language (being worked on)
@@ -21,6 +24,7 @@ But other then that, yeah uzbl is pretty usable.
 
 Also, I don't know about you but I just love (random) statistics so here you
 go:
+
 - peak amount of people on IRC: 83
 - project followers on github: 95
 - mailing list messages: 101

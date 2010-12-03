@@ -21,6 +21,7 @@ Thanks to all contributors!
 We also have a logo now, thanks Thorsten Wilms!
 
 TODO:
+
 - some sort of "multiple instances management" (Not saying tabs)
 - cookies
 - much more

@@ -27,26 +27,26 @@ Uzbl-core
 <ul>
 <li>Support both http and (new) javascript cookies.  This should fix
 problems with gmail and probably other sites</li>
-<li>javascript_windows parameter to control whether JS can open new windows by itself</li>
-<li>replaced old new_window handler with NEW_WINDOW event.  You can use this
+<li>`javascript_windows` parameter to control whether JS can open new windows by itself</li>
+<li>replaced old `new_window` handler with `NEW_WINDOW` event.  You can use this
 event to open links (normal links or js links) in the same/new window, but also to open the link in a
 new tab in uzbl-tabbed. (see config)</li>
 <li>some fixes in cleanup()</li>
 <li>Allow period character in variable names (update your user agent, see config)</li>
 <li>Don't try to steal focus if in plug mode</li>
 <li>simplify uri command. now just wraps around `set uri`</li>
-<li>remove deprecated download_handler. we already use the DOWNLOAD_REQUEST event</li>
+<li>remove deprecated `download_handler`. we already use the `DOWNLOAD_REQUEST` event</li>
 </ul>
 
 Config:
 <ul>
 <li>you can use both tabs and spaces in the config now</li>
-<li>'&lt;Shift-Insert&gt;` binding to dump xclip contents into keycmd</li>
-<li>`&lt;Ctrl&gt;]` binding to escape</li>
+<li>`<Shift-Insert>` binding to dump xclip contents into keycmd</li>
+<li>`<Ctrl>` binding to escape</li>
 <li>Reload only reloads set commands. This avoids things such as adding
 entries to your menu twice when reloading (but does not restore binds
 anymore)</li>
-<li>fix `&lt;Home&gt;` bind</li>
+<li>fix `<Home>` bind</li>
 </ul>
 
 Makefile:
@@ -72,6 +72,7 @@ in python, to minimize dependencies when the scripts end up in the main
 tree.
 
 Syntax hilighting in vim:
+
 <a href="/wiki/_detail/uzblvim.png?id=shots">
 <img src='/wiki/_media/uzblvim.png?w=320' alt="syntax highlighting"/></a>
 

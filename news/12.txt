@@ -7,6 +7,7 @@ allows us to handle contributions more transparantly and efficiently, and
 thanks to it, I've been able to integrate a lot of pending code.
 
 So, a 5818 lines changeset brings:
+
 - a unit testing framework
 - better variable expansion with support for constants and html escaping.
 - delete our old Gscanner based keyword replacer, we now use our variable expansion everywhere.
@@ -27,9 +28,9 @@ So, a 5818 lines changeset brings:
 
 
 Get it while it's hot:
+
 - <a href="http://github.com/Dieterbe/uzbl/tree/2009.07.18">2009.07.18 tree</a>
 - <a href="http://github.com/Dieterbe/uzbl/tarball/2009.07.18">2009.07.18 tgz</a>
-
 
 Note: uzbl can still be quite slow if you're using a cookie handler.  This
 is because we spawn a new process (and a script for that matter) for each

@@ -2,7 +2,7 @@
 
 2009-08-08
 
-- talk_to_socket command: yeah baby this is it.  With this thing you can
+- `talk_to_socket` command: yeah baby this is it.  With this thing you can
   have handlers running in the background listening on a socket.  You can
   use this for fast communication with handlers instead of respawning them
   all the time. You can try <a href="http://www.lwithers.me.uk/usr/src/cookie-handler/">lwithers' cookie handler </a>
@@ -11,17 +11,18 @@
   <strong>spawn</strong> command!
   We will improve this in the future to ship a socket based handler and use
   talk_to_socket by default.
-- removed html_mode in favor of "data URI scheme"
+- removed `html_mode` in favor of "data URI scheme"
 - custom variables: you can now set your own variables in your scripts and
   config file and use them whereever you want.
 - setting of default font_families.
-- uzbl_tabbed.py:
+- uzbl\_tabbed.py:
   * on the fly session saving and loading
   * cleanup itself after being SIGTERM'd or SIGINT'd from the terminal
   * re-factored fifo code 
 
 
 Get it while it's hot:
+
 - <a href="http://github.com/Dieterbe/uzbl/tree/2009.08.08">2009.08.08 tree</a>
 - <a href="http://github.com/Dieterbe/uzbl/tarball/2009.08.08">2009.08.08 tgz</a>
 

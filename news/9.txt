@@ -3,6 +3,7 @@ Xembed, more useful sample configs/scripts and more.
 2009-06-20
 
 Master branch now contains/supports:
+
 - Gtk Plug/Socket (Xembed), comes with sample python script for tabbing uzbl
 - a simpler way to play/test/develop/use for real:
   The same config file and set of scripts can now used for all situations, by just overriding the XDG variables.

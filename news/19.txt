@@ -8,16 +8,16 @@ Changes:
 <li>Mousebutton events (not yet combinable with modkeys) (Rob)</li>
 <li>Improved scroll command (Nicolas Pouillard)</li>
 <li>Security fixes in download.sh and scheme.py (Andy Spencer)</li>
-<li>search_clear command to clear search string (Rob)</li>
-<li>Give all executables in $PATH 'uzbl-' prefix (Dieter)</li>
+<li>`search_clear` command to clear search string (Rob)</li>
+<li>Give all executables in `$PATH` 'uzbl-' prefix (Dieter)</li>
 <li>Socket I/O fixes (Rob)</li>
-<li>better utf-8 handling with KEY_PRESS/RELEASE (Rob)</li>
+<li>better utf-8 handling with `KEY_PRESS/RELEASE` (Rob)</li>
 <li>Point to correct prefix in default config (Dieter)</li>
-<li>New events: PLUG_CREATED, COMMAND_ERROR, BUILTINS (Rob)</li>
+<li>New events: `PLUG_CREATED`, `COMMAND_ERROR`, `BUILTINS` (Rob)</li>
 <li>Removal of deprecated yank, clipboard, cookies.py scripts (Dieter)</li>
 <li>Stacked bindings work from the insert mode now. (Mason)</li>
-<li>MODKEY_ADDITION request to group multiple modkeys as one (Mason)</li>
-<li>IGNORE_KEY request to customize which keys to ignore. This also allows non-english users
+<li>`MODKEY_ADDITION` request to group multiple modkeys as one (Mason)</li>
+<li>`IGNORE_KEY` request to customize which keys to ignore. This also allows non-english users
 to ignore function keys they need to press to access
 special characters without those keys registering as a modkey action.
 (Mason)</li>

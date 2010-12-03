@@ -7,10 +7,12 @@ will call my master tags "releases" and provide links to tarballs.
 Expect a new release every few weeks or so.
 
 So here is the first uzbl alpha release, version 2009.07.03
+
 - <a href="http://github.com/Dieterbe/uzbl/tree/2009.07.03">tree</a>
 - <a href="http://github.com/Dieterbe/uzbl/tarball/2009.07.03">tgz</a>
 
 This version brings:
+
 - A JS object to execute commands (be sure to read the security implications in the readme)
 - config file changes: command substitution, variable expansion, javascript substitution
 - bidirectional socket (responses come back through the socket now)
@@ -18,20 +20,21 @@ This version brings:
 - Makefile compat fix, typos, cookies.py XDG paths bugfix and more small stuff
 
 For people with crappy window managers or on platforms
-over which they have very little control (*cough* you know who you are),
+over which they have very little control (\*cough\* you know who you are),
 lazy ones or just those who haven't seen the light yet,
 there is more good news:
+
 Some people in the community have taken it on them to improve
-uzbl_tabbed.py.. a lot! (uzbl_tabbed.py was the proof of concept script
+uzbl\_tabbed.py... a lot! (uzbl\_tabbed.py was the proof of concept script
 introduced 2 weeks ago to demonstrate the Xembed functionality)
 While it is quite new, I must say it is starting to look quite nice (and
 configurable).
+
 It's not for everyone, but I think some people will really like it.
 You'll find this updated version in the example scripts directory.
 
 <a href="/wiki/_detail/uzbl_tabbed2.png?id=uzbl_tabbed"><img src='/wiki/_media/uzbl_tabbed2.png?w=320' alt="Screenshot" /></a>
 <a href="/wiki/_detail/uzbl-aerialmono-tab.png?id=shots"><img src='/wiki/_media/uzbl-aerialmono-tab.png?w=320' alt="Screenshot" /></a>
-
 
 More info: <a href="http://www.uzbl.org/wiki/uzbl_tabbed">Uzbl wiki: uzbl tabbed</a>
 

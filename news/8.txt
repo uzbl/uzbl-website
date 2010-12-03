@@ -3,6 +3,7 @@ Cookies, custom stylesheets, and more.
 2009-06-06
 
 Master branch now contains/supports:
+
 - basic cookie support. it just stores all cookies and submits them again when visiting the same domain.  No policies or complete implementation yet. (EXPERIMENTAL)
 - override page layouts with custom stylesheets
 - improved formfiller and linkfollow scripts

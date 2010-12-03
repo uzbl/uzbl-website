@@ -2,15 +2,15 @@
 
 2009-09-12
 
-- uzbl: deprecate the history_handler variable.  The script stays, but you can bind to load_finish_handler. (Tom Adams)
-- uzbl: more sensible (better performing) max_conns and max_conns_host (me)
-- uzbl: don't hardcode keycmd clearing on load_start and make it optional (Tom Adams)
-- uzbl: always_insert_mode fix (James S Wheaton)
-- cookie_daemon.py: domain whitelisting (Michael Fiano)
-- cookie_daemon.py: initscript-like {start|stop|restart|reload} commands (Mason Larobina)
-- cookie_daemon.py: prevent duplicate daemons (Mason Larobina)
-- uzbl_tabbed: multiline tablist (Jake Probst)
-- uzbl_tabbed: bring_to_front (Devon Jones)
+- uzbl: deprecate the `history_handler` variable. The script stays, but you can bind to `load_finish_handler`. (Tom Adams)
+- uzbl: more sensible (better performing) `max_conns` and `max_conns_host` (me)
+- uzbl: don't hardcode keycmd clearing on `load_start` and make it optional (Tom Adams)
+- uzbl: `always_insert_mode` fix (James S Wheaton)
+- cookie\_daemon.py: domain whitelisting (Michael Fiano)
+- cookie\_daemon.py: initscript-like {start|stop|restart|reload} commands (Mason Larobina)
+- cookie\_daemon.py: prevent duplicate daemons (Mason Larobina)
+- uzbl\_tabbed: multiline tablist (Jake Probst)
+- uzbl\_tabbed: `bring_to_front` (Devon Jones)
 - Makefile: /usr/local prefix by default (Tom Adams)
 - configs: don't put things like hostname in default user-agent (me)
 - various code cleanups and improvements

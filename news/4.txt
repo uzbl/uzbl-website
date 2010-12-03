@@ -3,6 +3,7 @@ More updates
 2009-05-17
 
 The master branch is again in sync with the experimental one and brings you these features:
+
 - overhauled the config system. no more ini-files.  We now use files with commands in the same syntax as what you write to the fifo/pipes etc.
 - Entire configuration can be altered at runtime.
 - more advanced binding and command parsing options (see sample config)
