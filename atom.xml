@@ -1,5 +1,7 @@
 <?php
 
+header('Content-Type: application/atom+xml;charset=utf-8');
+
 require_once 'functions.inc';
 
 $feedtitle = 'Uzbl News';
@@ -10,19 +12,22 @@ echo ("<title>{$feedtitle}</title>\n");
 echo ("<link href=\"http://www.uzbl.org/atom.xml\" rel=\"self\"/>\n");
 echo ("<link href=\"http://www.uzbl.org/\"/>\n");
 
-$news = "";
-$newsarray = array_reverse (getnews (1));
+$newsarray = getnews(1);
+krsort($newsarray);
+
 foreach ($newsarray as $item) {
-    $news .= "
+    $entry_url = "http://www.uzbl.org/news.php?id=" . $item['id'];
+    $body = htmlspecialchars($item['body']);
+    echo "
     <entry>
+        <id>{$entry_url}</id>
         <title>{$item['title']}</title>
         <updated>{$item['date']}</updated>
-        <link href=\"http://www.uzbl.org/news.php?id={$item['id']}\"/>
-        <summary>{$item['body']}</summary>
+        <link href=\"{$entry_url}\"/>
+        <content type=\"html\">{$body}</content>
     </entry>";
 }
 
-echo ($news. "\n");
 echo ("</feed>");
 
 ?>
