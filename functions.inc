@@ -1,6 +1,7 @@
 <?php
  
 require_once 'simplepie.inc';
+require_once 'markdown-1.0.1m/markdown.php';
 
 function
 getfeed ($uri) {
@@ -48,10 +49,8 @@ getnews ($verbosity) { /* 1 = Display full body text
             } else if ($verbosity == -1 and strlen ($body) > 200) {
                 $body = substr ($body, 0, 200) . "...";
             }
-            $body = nl2br (trim ($body));
-	    $body = str_replace(array('<ul><br />', '</ul>',    '</li><br />'),
-				array('</p><ul>',   '</ul><p>', '</li>'),
-				$body);
+
+            $body = Markdown($body);
 
             $news[$id] = array ('id'    => $id,
                                 'title' => $title,
