@@ -12,7 +12,7 @@
       <li><a href="/commits.php">More&hellip;</a></li>
     </ul>
   </div>
-  
+
   <div id="branches">
     <h2>Branches</h2>
     <ul>
@@ -41,7 +41,7 @@
         <ul>
           <li>Uses WebkitGtk+ for rendering, network interaction (libsoup).  Css, javascript, plugin support etc come for free</li>
           <li>Provides interfaces to get data in (commands/configuration) and out (events): stdin/stdout/fifo/unix sockets</li>
-          <li>You see a webkit view and (optionally) a statusbar which gets popuplated externally</li>
+          <li>You see a webkit view and (optionally) a statusbar which gets populated externally</li>
           <li>No built-in means for url changing, loading/saving of bookmarks, saving history, keybinds, downloads, ...</li>
           <li>Extra functionality: many sample scripts come with it, on <a href="http://www.uzbl.org/wiki/scripts">uzbl wiki</a> or write them yourself</li>
           <li>Entire configuration/state can be changed at runtime</li>
@@ -67,9 +67,9 @@
     </ul>
     <p>Uzbl is under heavy development and should be considered alpha.  See the <a href="/get.php">Get uzbl</a> page</p>
   </div>
-  
+
   <div id="news">
     <h2>Latest News</h2>
-    <?php echo $news; ?>          
+    <?php echo $news; ?>
   </div>
 </div>
