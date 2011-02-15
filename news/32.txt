@@ -1,0 +1,46 @@
+2011.02.15: Too long between releases!
+
+2010-02-15
+
+Wow, it's already been 3 months since the last release? That's too long.
+
+I've been dreading this release, because it breaks backwards compatibility. In
+short:
+
+* the way downloads are handled has changed
+* `$UZBL_FIFO`, `$UZBL_TITLE` are available to scripts as environment
+  variables, but not as command-line arguments.
+* `$ENVIRONMENT_VARIABLES` are no longer expanded by the config parser
+* cookie daemons are no longer supported
+
+The <a href="http://www.uzbl.org/wiki/experimental-branch">full details are
+on the wiki</a>, including how to get your browser working again.
+
+The good news is:
+
+* downloads will work on sites that they didn't before
+* it's easier to write and understand scripts
+* uzbl parses commands faster and more consistently
+* uzbl can make requests immediately rather than waiting for a response from
+  an external cookie handler
+
+Besides these changes and various cleanup and bugfixes, we have:
+
+* a per-site-settings script that executes commands from a config file based
+  on the current URL
+* powerful cookie whitelisting and blacklisting
+* gtk3 support (we build against gtk2 by default, enabling gtk3 requires
+  uncommenting some lines in the Makefile)
+* the `accept_languages` variable, which controls the `Accept-Language` HTTP
+  header
+* a split statusbar that allows right-aligned content
+
+This release was brought to you by Ben Boeckel, k0ral, David Keijser, Jochen
+Sprickerhof, and myself. (I'm the one to blame for the compatibility changes.)
+
+<ul>
+  <li><a href="https://github.com/Dieterbe/uzbl/tree/2011.02.15">2011.02.15 tree</a>
+  <li><a href="https://github.com/Dieterbe/uzbl/tarball/2011.02.15">2011.02.15 tgz</a>
+</ul>
+
+Brendan
