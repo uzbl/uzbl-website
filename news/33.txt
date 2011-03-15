@@ -1,0 +1,29 @@
+2011.03.14: Happy Pi Day
+
+2010-03-14
+
+Today's release brings you:
+
+* a command history event manager plugin. Default bindings are `<Up>` and
+  `<Down>` for browsing recent commands, and `<Ctrl>r` for searching through
+  the command history.
+* an updated (much more readable) formfiller script. Unfortunately the new
+  formfiller uses a different data syntax, so any saved data remaining from
+  the old formfiller won't work.
+* improved vim syntax highlighting
+* a `current_encoding` variable that lets you force the current page to be
+  interpreted with a certain text encoding.
+* support for cookie daemons (deprecated in the last release) has been removed.
+
+And of course various bugfixes.
+
+Many thanks to this month's team: Taylan Ulrich Bayırlı, Felix Herrmann, k0ral,
+David Keijser, Jake Probst, and Gregor Uhlenheuer. Any breakages are my fault
+:).
+
+<ul>
+  <li><a href="https://github.com/Dieterbe/uzbl/tree/2011.03.14">2011.03.14 tree</a>
+  <li><a href="https://github.com/Dieterbe/uzbl/tarball/2011.03.14">2011.03.14 tgz</a>
+</ul>
+
+Brendan
