@@ -1,0 +1,15 @@
+2011.03.17: Uzbl-tabbed Bugfix
+
+2011-03-17
+
+Yesterday it was pointed out that uzbl-tabbed is broken in the 2011.03.14
+release, due to the changes in the format of event messages.
+
+This is a very boring release that fixes that.
+
+<ul>
+  <li><a href="https://github.com/Dieterbe/uzbl/tree/2011.03.17">2011.03.17 tree</a>
+  <li><a href="https://github.com/Dieterbe/uzbl/tarball/2011.03.17">2011.03.17 tgz</a>
+</ul>
+
+Brendan
