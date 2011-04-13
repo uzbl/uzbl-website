@@ -1,0 +1,32 @@
+2011.04.12: Happy Yuri's Day
+
+2010-04-12
+
+50 years of humans in space! Not really that long, when you think about it.
+
+So, what's new with uzbl?
+
+- new example bindings:
+  - `<Ctrl>p` makes a hardcopy of a page
+  - `gw` opens a new window (even when the `NEW_WINDOW` event is configured to
+    open a tab)
+  - `zs` switches from http to https in the current window
+  - `zS` switches from http to https in a new window
+- big improvements to the keyboard link follower:
+  - following links within frames
+  - activating `onclick` elements
+  - prettification
+- improved example download handler
+- uzbl-tabbed:
+  - `--socketdir` and `--fifodir` arguments
+
+And of course various bugfixes.
+
+Many thanks to everybody who contributed!
+
+<ul>
+  <li><a href="https://github.com/Dieterbe/uzbl/tree/2011.04.12">2011.04.12 tree</a>
+  <li><a href="https://github.com/Dieterbe/uzbl/tarball/2011.04.12">2011.04.14 tgz</a>
+</ul>
+
+Brendan
