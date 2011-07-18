@@ -21,8 +21,8 @@ And various bugfixes (window resizing on some window managers, opening paths
 on the local filesystem, etc.).
 
 <ul>
-  <li><a href="https://github.com/Dieterbe/uzbl/tree/2011.07.16">2011.07.17 tree</a>
-  <li><a href="https://github.com/Dieterbe/uzbl/tarball/2011.07.16">2011.07.17 tgz</a>
+  <li><a href="https://github.com/Dieterbe/uzbl/tree/2011.07.17">2011.07.17 tree</a>
+  <li><a href="https://github.com/Dieterbe/uzbl/tarball/2011.07.17">2011.07.17 tgz</a>
 </ul>
 
 Brendan
