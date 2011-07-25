@@ -2,10 +2,6 @@
 
 2011-07-17
 
-**Update**: There's a window sizing bug in this release. We're deciding on a
-solution, until then you can work around it by adding `set
-scrollbars_visible = 1` to the bottom of your config file.
-
 Well hello again! It's been a few months since the last time we talked. Since
 then, uzbl has gained:
 

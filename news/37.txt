@@ -1,0 +1,20 @@
+2011.07.25: Scrollbars have defeated us
+
+2011-07-25
+
+A quick bugfix: the `scrollbars_visible` option is completely gone. It didn't
+work at all with GTK3 builds, and [a discussion on the Webkit-GTK mailing list][wkgtk-discussion]
+made it apparent that the method we were using was never intended to work.
+
+Besides, there's a better way: you can [use GTK's theming capabilities to turn
+scrollbars off, or style them to be less offensive][hide-with-theming].
+
+[hide-with-theming]: http://uzbl.org/wiki/hide-scrollbars
+[wkgtk-discussion]: http://www.mail-archive.com/webkit-gtk@lists.webkit.org/msg00510.html
+
+<ul>
+  <li><a href="https://github.com/Dieterbe/uzbl/tree/2011.07.25">2011.07.25 tree</a>
+  <li><a href="https://github.com/Dieterbe/uzbl/tarball/2011.07.25">2011.07.25 tgz</a>
+</ul>
+
+Brendan
