@@ -1,0 +1,21 @@
+2011.10.01: Release early, release occasionally
+
+2011-10-01
+
+Not many new features this time, just a slew of bugfixes and bunch of
+refactoring.
+
+- **breaking change**: the variables `disable_plugins` and `disable_scripts`
+  have been replaced by `enable_plugins` and `enable_scripts`, for more
+  consistency in variable naming.
+- added events for double and triple clicks
+- added a `spellcheck_languages` variable.
+- on some systems windows and tabs took a long time to close, this has been
+  fixed.
+
+<ul>
+  <li><a href="https://github.com/Dieterbe/uzbl/tree/2011.10.01">2011.10.01 tree</a>
+  <li><a href="https://github.com/Dieterbe/uzbl/tarball/2011.10.01">2011.10.01 tgz</a>
+</ul>
+
+Brendan
