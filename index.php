@@ -10,6 +10,7 @@ $URLS = array ('/'                => 'Index',
                '/archives.php/'   => 'Archives',
                '/faq.php/'        => 'FAQ',
                '/readme.php/'     => 'Readme',
+               '/keybindings.php/'=> 'Keybindings',
                '/get.php/'        => 'Get',
                '/community.php/'  => 'Community',
                '/contribute.php/' => 'Contribute',
@@ -24,7 +25,14 @@ $phatso->run ($URLS);
 function exec_doesitwork ($app, $params) {
 	$navigation = navigation ();
 	$app->set ('navigation', $navigation);
-	$content = '<br><br><br><br><br><br><img src="img/uzbl-logo.png" alt="Uzbl"/><br><strong>Seems like it works</strong>';
+
+	$content  = '<h1 style="text-align: center;">Seems like it works!</h1>';
+	$content .= '<h2>Next Steps</h2><ul>';
+	$content .= "<li>Take a look at the <a href='http://uzbl.org/keybindings.php'>keybinding cheat sheet</a></li>";
+	$content .= '<li>Explore the example configuration (<kbd>~/.config/uzbl/config</kbd>)</li>';
+	$content .= "<li>If you're using uzbl-tabbed, edit the config to select a different <kbd>NEW_WINDOW</kbd> event handler so windows open in a new tab (search the config for <kbd>NEW_WINDOW</kbd>)</li>";
+	$content .= '</ul>';
+
 	$app->set ('content', $content);
 	$app->render ('1col.php');
 }
@@ -84,6 +92,10 @@ function exec_Readme ($app, $params) {
     $app->set ('content', $content);
 
     $app->render ('1col.php');
+}
+
+function exec_Keybindings ($app, $params) {
+    echo file_get_contents('../uzbl/docs/keybindings.html');
 }
 
 function exec_Get ($app, $params) {
