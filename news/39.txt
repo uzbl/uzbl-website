@@ -1,0 +1,50 @@
+2011.11.28: 28 de Noviembre
+
+2011-11-28
+
+We've added a `toggle` command that cycles a variable through a list of values:
+
+    # you can give the command a list of values to toggle between
+    # this keybinding will enable/disable a proxy
+    @cbind -pr = toggle proxy_url 'http://localhost:8123/' ''
+
+    # if you have several proxies you could cycle between them by passing more
+    # urls to the command.
+
+    # numeric variables default to toggling between 0 and 1.
+    # this keybinding will turn the status bar on/off.
+    #   (the toggle_status command still exists, but is deprecated)
+    @cbind  t   = toggle show_status
+
+Uzbl can now do very basic SSL verification. Two new variables have been added:
+`ssl_verify` tells uzbl whether to check SSL certificates, and `ssl_ca_file`
+tells uzbl which certificate authority (CA) certificates to verify against.
+
+**Note**: `ssl_ca_file` needs to be correctly set for any verification to be
+performed!
+
+The UI for an SSL verification failure is really awful, it just pops up a rather
+confusing error message. I wanted to do much more with this, but at this point
+it's just better to have anything.
+
+A new mode has been added to the scroll command, you can scroll to an absolute
+location.
+
+    # scrolls to 50 pixels from the top of the page
+    scroll vertical 50!
+
+The default home page has some advice on what to do once you've got uzbl
+installed, and I've added a [keybinding cheat sheet](http://uzbl.org/keybindings.php)
+to the website.
+
+We have big plans in the works for the next few months. A major refactor of the
+event manager has been completed (it would have been in this release but I need
+to put more thought into the installation process). And the massive task that
+I've been dreading - a complete rewrite of the command language - is well underway.
+
+<ul>
+  <li><a href="https://github.com/Dieterbe/uzbl/tree/2011.11.28">2011.11.28 tree</a>
+  <li><a href="https://github.com/Dieterbe/uzbl/tarball/2011.11.28">2011.11.28 tgz</a>
+</ul>
+
+Brendan
