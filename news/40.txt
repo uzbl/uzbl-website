@@ -1,0 +1,25 @@
+2012.05.14: World Naked Gardening Day
+
+2012-05-19
+
+This release is mostly fixes for bugs.
+
+ * copy and paste behaves less strangely
+ * fancy textareas perform better
+ * by default Uzbl passes multiple clicks through to Webkit; there's a
+  `handle_multi_click` variable that can be set so that you can do your own
+  handling
+ * cookies.txt is now created `chmod o-r` so that other users on your system
+  cannot access it. (Existing cookie files will have their permissions changed.)
+ * the `back` and `forward` commands can now take a numeric argument to go back
+   or forward multiple steps
+
+In the development version we've rewritten the event manager in Python 3 and
+exposed more Webkit functionality.
+
+<ul>
+  <li><a href="https://github.com/Dieterbe/uzbl/tree/2012.05.14">2012.05.14 tree</a>
+  <li><a href="https://github.com/Dieterbe/uzbl/tarball/2012.05.14">2012.05.14 tgz</a>
+</ul>
+
+Brendan
