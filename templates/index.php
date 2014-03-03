@@ -18,12 +18,12 @@
     <ul>
       <li>Official
         <ol>
-          <li><a href="http://github.com/Dieterbe/uzbl/tree/master">master</a></li>
-          <li><a href="http://github.com/Dieterbe/uzbl/tree/experimental">experimental</a></li>
+          <li><a href="http://github.com/uzbl/uzbl/tree/master">master</a></li>
+          <li><a href="http://github.com/uzbl/uzbl/tree/experimental">experimental</a></li>
       </ol></li>
       <li>Community
         <ol>
-          <li><a href="http://github.com/Dieterbe/uzbl/network">many repos @ github</a></li>
+          <li><a href="http://github.com/uzbl/uzbl/network">many repos @ github</a></li>
           <li><a href="http://www.google.com/search?q=google+uzbl+git+-github">some repos not @ github</a></li>
           <li><a href="http://github.com/search?q=uzbl">github search</a></li>
       </ol></li>

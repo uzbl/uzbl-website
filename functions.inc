@@ -64,14 +64,14 @@ getnews ($verbosity) { /* 1 = Display full body text
 
 function
 recentcommits ($branch, $limit, $detailed) {
-    $commits     = getfeed ('http://github.com/feeds/Dieterbe/commits/uzbl/' . $branch);
+    $commits     = getfeed ('https://github.com/uzbl/uzbl/commits/' . $branch . '.atom');
     $num_commits = 0;
     $output      = '';
 
     foreach ($commits as $commit) {
         if ($num_commits < $limit) {
             if ($detailed) {
-                $output .= "<li><span class='commithead'><h3><a href='{$commit['permalink']}'>{$commit['title']}</a></h3> <span class='commitdate'>{$commit['date']}</span> <span class='branch'><a href='http://github.com/Dieterbe/uzbl/tree/{$branch}'>{$branch}</a></span></span>\n";
+                $output .= "<li><span class='commithead'><h3><a href='{$commit['permalink']}'>{$commit['title']}</a></h3> <span class='commitdate'>{$commit['date']}</span> <span class='branch'><a href='https://github.com/uzbl/uzbl/tree/{$branch}'>{$branch}</a></span></span>\n";
                 $output .= "{$commit['description']}</li>\n";
             } else {
                 $title = $commit['title'];
