@@ -41,6 +41,8 @@ function exec_Index ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
+    $commits  = recentcommits ('next', 7, false);
+    $commits .= "<li><hr /></li>\n";
     $commits  = recentcommits ('experimental', 7, false);
     $commits .= "<li><hr /></li>\n";
     $commits .= recentcommits ('master', 7, false);
@@ -133,6 +135,8 @@ function exec_Commits ($app, $params) {
     $app->set ('navigation', $navigation);
 
     $commits  = "<ul id=\"morecommits\">\n";
+    $commits .= recentcommits ('next', 7, true);
+    $commits .= "<li><hr /></li>\n";
     $commits .= recentcommits ('experimental', 7, true);
     $commits .= "<li><hr /></li>\n";
     $commits .= recentcommits ('master', 7, true);
