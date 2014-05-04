@@ -20,6 +20,7 @@
         <ol>
           <li><a href="http://github.com/uzbl/uzbl/tree/master">master</a></li>
           <li><a href="http://github.com/uzbl/uzbl/tree/experimental">experimental</a></li>
+          <li><a href="http://github.com/uzbl/uzbl/tree/next">next</a></li>
       </ol></li>
       <li>Community
         <ol>
