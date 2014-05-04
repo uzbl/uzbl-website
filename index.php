@@ -43,7 +43,7 @@ function exec_Index ($app, $params) {
     
     $commits  = recentcommits ('next', 7, false);
     $commits .= "<li><hr /></li>\n";
-    $commits  = recentcommits ('experimental', 7, false);
+    $commits .= recentcommits ('experimental', 7, false);
     $commits .= "<li><hr /></li>\n";
     $commits .= recentcommits ('master', 7, false);
     $app->set ('recentcommits', $commits);
