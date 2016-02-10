@@ -10,7 +10,6 @@ $URLS = array ('/'                => 'Index',
                '/archives.php/'   => 'Archives',
                '/faq.php/'        => 'FAQ',
                '/readme.php/'     => 'Readme',
-               '/keybindings.php/'=> 'Keybindings',
                '/get.php/'        => 'Get',
                '/community.php/'  => 'Community',
                '/contribute.php/' => 'Contribute',
@@ -80,7 +79,7 @@ function exec_FAQ ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
-    $content = markdown_file('../uzbl/docs/FAQ');
+    $content = markdown_file('../uzbl/docs/FAQ.md');
     $app->set ('content', $content);
 
     $app->render ('1col.php');
@@ -90,21 +89,17 @@ function exec_Readme ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
-    $content = markdown_file('../uzbl/README');
+    $content = markdown_file('../uzbl/README.md');
     $app->set ('content', $content);
 
     $app->render ('1col.php');
-}
-
-function exec_Keybindings ($app, $params) {
-    echo file_get_contents('../uzbl/docs/keybindings.html');
 }
 
 function exec_Get ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
-    $content = markdown_file('../uzbl/docs/INSTALL');
+    $content = markdown_file('../uzbl/docs/INSTALL.md');
     $app->set ('content', $content);
 
     $app->render ('1col.php');
@@ -114,7 +109,7 @@ function exec_Community ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
-    $content = markdown_file('../uzbl/docs/COMMUNITY');
+    $content = markdown_file('../uzbl/docs/COMMUNITY.md');
     $app->set ('content', $content);
 
     $app->render ('1col.php');
@@ -124,7 +119,7 @@ function exec_Contribute ($app, $params) {
     $navigation = navigation ();
     $app->set ('navigation', $navigation);
     
-    $content = markdown_file('../uzbl/docs/CONTRIBUTING');
+    $content = markdown_file('../uzbl/docs/CONTRIBUTING.md');
     $app->set ('content', $content);
 
     $app->render ('1col.php');
