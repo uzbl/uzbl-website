@@ -141,14 +141,16 @@ news ($page, $navlinks, $archivelink) {
 
 function
 navigation () {
-    $pages = array ('/'              => 'Home',
-                    'faq.php'        => 'FAQ',
-                    'readme.php'     => 'Readme',
-                    'get.php'        => 'Get',
-                    'community.php'  => 'Community',
-                    'contribute.php' => 'Contribute',
-                    'wiki/'          => 'Wiki',
-                    'bugs/'          => 'Bugs');
+    $pages = array (
+        '/'              => 'Home',
+        'faq.php'        => 'FAQ',
+        'readme.php'     => 'Readme',
+        'get.php'        => 'Get',
+        'community.php'  => 'Community',
+        'contribute.php' => 'Contribute',
+        'wiki/'          => 'Wiki',
+        'https://github.com/uzbl/uzbl/issues' => 'Bugs'
+    );
 
     $indexaliases = array ('', 'index.php', 'news.php', 'commits.php'); // These things should highlight "Home" in the navbar.
     $uri          = str_replace ('/', '', $_SERVER['REDIRECT_URL']);
