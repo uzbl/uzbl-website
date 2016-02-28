@@ -1,0 +1,31 @@
+2016.02.28: uzbl 0.9
+
+Uzbl version 0.9.0 is relased.
+
+With a lot of big refactoring and smaller patches piling up over the past years
+this release is, needless to say, way overdue.
+
+So what's with the version number? Why not 1.0?  We wanted to make a 1.0 the
+version with fully supported WebKit2, but this is not that. In fact WebKit2
+support is completely removed from 0.9 to let us focus on getting something
+stable.
+
+With 179 files changed, 20242 insertions(+), 10994 deletions(-) the full list of
+changes would be much to long include here, instead here's a small overview.
+
+* A big refactor and clean-up of core
+* An almost rewrite of the python event-manager
+* Restructured and renamed commands for better consistency
+* Support for composing characters using dead keys
+* And various assorted bug fixes
+
+The new <a href="https://github.com/uzbl/uzbl/releases/tag/v0.9.0">release</a>
+is available on github. Also make sure to read the
+<a href="https://github.com/uzbl/uzbl/master/UPGRADING.md">upgrading instructions</a>
+if upgrading from earlier versions.
+
+Looking ahead WebKit2 is the next big challenge and the plan is to start
+building uzbl 1.0 in the next branch that will only support WebKit2 but still
+with the same API towards scripts etc. as this release.
+
+David
