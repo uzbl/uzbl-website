@@ -21,7 +21,7 @@ changes would be much to long include here, instead here's a small overview.
 
 The new <a href="https://github.com/uzbl/uzbl/releases/tag/v0.9.0">release</a>
 is available on github. Also make sure to read the
-<a href="https://github.com/uzbl/uzbl/master/UPGRADING.md">upgrading instructions</a>
+<a href="https://github.com/uzbl/uzbl/blob/master/UPGRADING.md">upgrading instructions</a>
 if upgrading from earlier versions.
 
 Looking ahead WebKit2 is the next big challenge and the plan is to start
