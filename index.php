@@ -10,6 +10,7 @@ $URLS = array ('/'                => 'Index',
                '/archives.php/'   => 'Archives',
                '/faq.php/'        => 'FAQ',
                '/readme.php/'     => 'Readme',
+               '/keybindings.php/'=> 'Keybindings',
                '/get.php/'        => 'Get',
                '/community.php/'  => 'Community',
                '/contribute.php/' => 'Contribute',
@@ -90,6 +91,16 @@ function exec_Readme ($app, $params) {
     $app->set ('navigation', $navigation);
     
     $content = markdown_file('../uzbl/README.md');
+    $app->set ('content', $content);
+
+    $app->render ('1col.php');
+}
+
+function exec_Keybindings ($app, $params) {
+    $navigation = navigation ();
+    $app->set ('navigation', $navigation);
+    
+    $content = markdown_file('../uzbl/docs/KEYBINDINGS.md');
     $app->set ('content', $content);
 
     $app->render ('1col.php');
