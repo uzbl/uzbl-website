@@ -1,6 +1,6 @@
 2016.02.28: uzbl 0.9
 
-Uzbl version 0.9.0 is relased.
+Uzbl version 0.9.0 is released.
 
 With a lot of big refactoring and smaller patches piling up over the past years
 this release is, needless to say, way overdue.
