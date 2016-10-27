@@ -1,0 +1,10 @@
+2016.02.28: Version 0.9.1 is released
+
+This is another release of the 0.9 series of uzbl bringing a collection of
+bugfixes.
+
+Get the <a href="https://github.com/uzbl/uzbl/releases/tag/v0.9.1">release</a>
+from github. If upgrading from a PRE-0.9 version then also make sure to read the
+<a href="https://github.com/uzbl/uzbl/blob/master/UPGRADING.md">upgrading instructions</a>
+
+David
