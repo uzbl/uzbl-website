@@ -5,14 +5,6 @@
 </div>
 
 <div id="right">
-  <div id="commits">
-    <h2>Recent Commits</h2>
-    <ul>
-      <?php echo $recentcommits; ?>
-      <li><a href="/commits.php">More&hellip;</a></li>
-    </ul>
-  </div>
-
   <div id="branches">
     <h2>Branches</h2>
     <ul>

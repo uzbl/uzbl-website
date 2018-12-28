@@ -1,26 +1,6 @@
 <?php
  
-require_once 'simplepie.inc';
 require_once 'markdown-1.0.1m/markdown.php';
-
-function
-getfeed ($uri) {
-    $feed = new SimplePie ($uri);
- 
-    $feed->handle_content_type ();
-    
-    $items = array();
-    foreach ($feed->get_items () as $item) {
-        $info = array('permalink'   => $item->get_permalink (),
-                      'title'       => $item->get_title (),
-                      'description' => $item->get_description (),
-                      'date'        => $item->get_date ('j F Y | g:i a'),
-                      'date2'       => $item->get_date ('U'));
-        $items[] = $info;
-    }
-
-    return $items;
-}
 
 function
 getnews ($verbosity) { /* 1 = Display full body text
@@ -60,31 +40,6 @@ getnews ($verbosity) { /* 1 = Display full body text
       }
     closedir ($dir_handle);
     return $news;
-}
-
-function
-recentcommits ($branch, $limit, $detailed) {
-    $commits     = getfeed ('https://github.com/uzbl/uzbl/commits/' . $branch . '.atom');
-    $num_commits = 0;
-    $output      = '';
-
-    foreach ($commits as $commit) {
-        if ($num_commits < $limit) {
-            if ($detailed) {
-                $output .= "<li><span class='commithead'><h3><a href='{$commit['permalink']}'>{$commit['title']}</a></h3> <span class='commitdate'>{$commit['date']}</span> <span class='branch'><a href='https://github.com/uzbl/uzbl/tree/{$branch}'>{$branch}</a></span></span>\n";
-                $output .= "{$commit['description']}</li>\n";
-            } else {
-                $title = $commit['title'];
-                if (strlen ($title) > 35)
-                    $title = substr ($title, 0, 32) . '...';
-
-                $output .= "<li>{$title} <span class='branch'>{$branch}</span></li>\n";
-                $num_commits++;
-            }
-        }
-    }
-
-    return $output;
 }
 
 
