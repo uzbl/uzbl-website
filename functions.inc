@@ -103,7 +103,6 @@ navigation () {
         'get.php'        => 'Get',
         'community.php'  => 'Community',
         'contribute.php' => 'Contribute',
-        'wiki/'          => 'Wiki',
         'https://github.com/uzbl/uzbl/issues' => 'Bugs'
     );
 
