@@ -10,15 +10,15 @@
     <ul>
       <li>Official
         <ol>
-          <li><a href="http://github.com/uzbl/uzbl/tree/master">master</a></li>
-          <li><a href="http://github.com/uzbl/uzbl/tree/experimental">experimental</a></li>
-          <li><a href="http://github.com/uzbl/uzbl/tree/next">next</a></li>
+          <li><a href="https://github.com/uzbl/uzbl/tree/master">master</a></li>
+          <li><a href="https://github.com/uzbl/uzbl/tree/experimental">experimental</a></li>
+          <li><a href="https://github.com/uzbl/uzbl/tree/next">next</a></li>
       </ol></li>
       <li>Community
         <ol>
-          <li><a href="http://github.com/uzbl/uzbl/network">many repos @ github</a></li>
-          <li><a href="http://www.google.com/search?q=google+uzbl+git+-github">some repos not @ github</a></li>
-          <li><a href="http://github.com/search?q=uzbl">github search</a></li>
+          <li><a href="https://github.com/uzbl/uzbl/network">many repos @ github</a></li>
+          <li><a href="https://www.google.com/search?q=google+uzbl+git+-github">some repos not @ github</a></li>
+          <li><a href="https://github.com/search?q=uzbl">github search</a></li>
       </ol></li>
     </ul>
   </div>
@@ -36,7 +36,7 @@
           <li>Provides interfaces to get data in (commands/configuration) and out (events): stdin/stdout/fifo/unix sockets</li>
           <li>You see a webkit view and (optionally) a statusbar which gets populated externally</li>
           <li>No built-in means for url changing, loading/saving of bookmarks, saving history, keybinds, downloads, ...</li>
-          <li>Extra functionality: many sample scripts come with it, on <a href="http://www.uzbl.org/wiki/scripts">uzbl wiki</a> or write them yourself</li>
+          <li>Extra functionality: many sample scripts come with it, on <a href="https://www.uzbl.org/wiki/scripts">uzbl wiki</a> or write them yourself</li>
           <li>Entire configuration/state can be changed at runtime</li>
           <li>Uzbl keeps it simple, and puts <strong>you</strong> in charge.</li>
         </ul>
