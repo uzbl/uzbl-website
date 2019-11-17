@@ -36,7 +36,7 @@
           <li>Provides interfaces to get data in (commands/configuration) and out (events): stdin/stdout/fifo/unix sockets</li>
           <li>You see a webkit view and (optionally) a statusbar which gets populated externally</li>
           <li>No built-in means for url changing, loading/saving of bookmarks, saving history, keybinds, downloads, ...</li>
-          <li>Extra functionality: many sample scripts come with it, on <a href="https://www.uzbl.org/wiki/scripts">uzbl wiki</a> or write them yourself</li>
+          <li>Extra functionality: many sample scripts come with it, or write them yourself</li>
           <li>Entire configuration/state can be changed at runtime</li>
           <li>Uzbl keeps it simple, and puts <strong>you</strong> in charge.</li>
         </ul>
