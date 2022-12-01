@@ -33,11 +33,11 @@ class Phatso
 	function run($urls) {
 		$ctrl = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 		for($i = 0; $i <= strlen($ctrl); $i++) {
-			if($ctrl{$i} != $_SERVER['SCRIPT_NAME']{$i}) break;
+			if($ctrl[$i] != $_SERVER['SCRIPT_NAME'][$i]) break;
 		}
 		$this->web_root = substr($ctrl, 0, $i);
 		$ctrl = trim(substr($ctrl, $i), '/').'/';
-		if($ctrl{0} != '/') $ctrl = "/$ctrl";
+		if($ctrl[0] != '/') $ctrl = "/$ctrl";
 
 		$action = '';
 		$params = array();

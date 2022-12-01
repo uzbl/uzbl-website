@@ -1,6 +1,7 @@
 <?php
- 
-require_once 'markdown-1.0.1m/markdown.php';
+
+require_once 'Michelf/MarkdownExtra.inc.php';
+use Michelf\MarkdownExtra;
 
 function
 getnews ($verbosity) { /* 1 = Display full body text
@@ -30,7 +31,7 @@ getnews ($verbosity) { /* 1 = Display full body text
                 $body = substr ($body, 0, 200) . "...";
             }
 
-            $body = Markdown($body);
+            $body = MarkdownExtra::defaultTransform($body);
 
             $news[$id] = array ('id'    => $id,
                                 'title' => $title,
@@ -107,7 +108,7 @@ navigation () {
     );
 
     $indexaliases = array ('', 'index.php', 'news.php', 'commits.php'); // These things should highlight "Home" in the navbar.
-    $uri          = str_replace ('/', '', $_SERVER['REDIRECT_URL']);
+    $uri          = str_replace ('/', '', $_SERVER['REQUEST_URI']);
     $uri          = (in_array ($uri, $indexaliases)) ? '/' : $uri;
 
     $output = '';
@@ -123,8 +124,7 @@ navigation () {
 function
 markdown_file ($file) {
     $filecontents = file_get_contents ($file);
-    //$filecontents = htmlentities      ($filecontents);
-    $markdown     = Markdown          ($filecontents);
+    $markdown     = MarkdownExtra::defaultTransform ($filecontents);
 
     return $markdown;
 }
