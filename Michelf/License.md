@@ -1,11 +1,11 @@
-PHP Markdown
-Copyright (c) 2004-2008 Michel Fortin  
-<http://www.michelf.com/>  
+PHP Markdown Lib  
+Copyright (c) 2004-2022 Michel Fortin
+<https://michelf.ca/>  
 All rights reserved.
 
 Based on Markdown  
-Copyright (c) 2003-2006 John Gruber   
-<http://daringfireball.net/>   
+Copyright (c) 2003-2006 John Gruber  
+<https://daringfireball.net/>  
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
