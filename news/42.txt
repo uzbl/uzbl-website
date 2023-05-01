@@ -1,5 +1,7 @@
 2016.11.27: Version 0.9.1 is released
 
+2016-11-27
+
 This is another release of the 0.9 series of uzbl bringing a collection of
 bugfixes.
 
